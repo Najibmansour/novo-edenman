@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$randStarty1: random(500);
+$randStarty2: random(500);
+$randStarty3: random(500);
+$randStarty4: random(500);
+
+$randStartx1: random(500);
+$randStartx2: random(500);
+$randStartx3: random(500);
+$randStartx4: random(500);
+
+$randRot1: random(45);
+$randRot2: random(45);
+$randRot3: random(45);
+$randRot4: random(45);
+
+@keyframes blob1 {
+  0% {
+    transform: translate($randStarty2 + px, $randStartx1 + px)
+      rotate(-$randRot1 + deg);
+  }
+  33% {
+    transform: translate($randStartx2 + px, $randStarty3 + px)
+      rotate(-$randRot2 + deg);
+  }
+  66% {
+    transform: translate($randStarty4 + px, $randStartx2 + px)
+      rotate($randRot4 + deg);
+  }
+  100% {
+    transform: translate($randStarty2 + px, $randStartx1 + px)
+      rotate(-$randRot1 + deg);
+  }
+}
+@keyframes blob2 {
+  0% {
+    transform: translate($randStarty1 + px, $randStartx2 + px)
+      rotate($randRot2 + deg);
+  }
+  33% {
+    transform: translate($randStartx2 + px, $randStartx4 + px)
+      rotate($randRot4 + deg);
+  }
+  66% {
+    transform: translate($randStartx3 + px, $randStartx2 + px)
+      rotate(-$randRot1 + deg);
+  }
+  100% {
+    transform: translate($randStarty1 + px, $randStartx2 + px)
+      rotate($randRot2 + deg);
+  }
+}
+@keyframes blob3 {
+  0% {
+    transform: translate($randStarty4 + px, $randStartx3 + px)
+      rotate(-$randRot2 + deg);
+  }
+  33% {
+    transform: translate($randStartx2 + px, $randStartx4 + px)
+      rotate($randRot4 + deg);
+  }
+  66% {
+    transform: translate($randStartx3 + px, $randStartx2 + px)
+      rotate(90-$randRot1 + deg);
+  }
+  100% {
+    transform: translate($randStarty4 + px, $randStartx3 + px)
+      rotate($randRot2 + deg);
+  }
+}
+@keyframes blob4 {
+  0% {
+    transform: translate($randStarty1 + px, $randStartx2 + px)
+      rotate(-$randRot2 + deg);
+  }
+  33% {
+    transform: translate($randStartx2 + px, $randStartx4 + px)
+      rotate($randRot4 + deg);
+  }
+  66% {
+    transform: translate($randStartx3 + px, $randStartx2 + px)
+      rotate(-$randRot1 + deg);
+  }
+  100% {
+    transform: translate($randStarty1 + px, $randStartx2 + px)
+      rotate($randRot2 + deg);
+  }
+}
+
+.shape1 {
+  animation: blob1 10s infinite;
+}
+
+.shape2 {
+  animation: blob2 10s infinite;
+}
+.shape3 {
+  animation: blob1 10s infinite;
+}
+.shape4 {
+  animation: blob2 10s infinite;
+}
