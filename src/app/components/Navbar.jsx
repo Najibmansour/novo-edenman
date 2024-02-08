@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="">
       {" "}
-      <div className="flex flex-row justify-evenly lg:justify-center items-center pt-[6svh] pb-[4svh]">
+      <div className="flex flex-row justify-evenly lg:justify-center items-center pt-[4svh] pb-[4svh]">
         <Logo className="lg:w-10 w-7" />
         <div className="w-[70%] menu menu-horizontal justify-evenly lg:inline-flex hidden">
           {navItems.map((item) => (
