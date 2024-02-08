@@ -17,6 +17,10 @@ $randRot2: random(45);
 $randRot3: random(45);
 $randRot4: random(45);
 
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
 @keyframes blob1 {
   0% {
     transform: translate($randStarty2 + px, $randStartx1 + px)

@@ -3,12 +3,12 @@ import Blob from "./Blob";
 
 const BlobsContainer = (props) => {
   return (
-    <div>
-      <div
-        className="w-[calc(100vw*0.8)] h-[calc(100vh*0.8)] lg:rounded-[5rem] rounded-[2.5rem]  overflow-hidden relative"
-        {...props}
-      >
-        <div className="filter blur-[200px]">
+    <div {...props}>
+      <div className="absolute ">
+        <div className="flex absolute ">{props.children}</div>
+      </div>
+      <div className="w-[calc(100vw*0.8)] lg:w-[calc(100vw*0.7)] h-[calc(100vh*0.7)]  lg:rounded-[5rem] rounded-[2.5rem]  overflow-hidden relative">
+        <div className="filter blur-[200px] grayscale-[0.4]">
           <Blob
             variant={3}
             color="#A97C50"

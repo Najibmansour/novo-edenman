@@ -45,7 +45,7 @@ const Blob = (props) => (
             />
           </clipPath>
         </defs>
-        <g clip-path="url(#a)">
+        <g clip="url(#a)">
           <path
             fill={props.color}
             d="M753 604q34 104-34 232.5T523.5 893Q396 821 312 759.5T162 599q-66-99-55.5-238T284 285.5Q451 349 509 322t177.5-35.5Q806 278 762.5 389T753 604Z"
