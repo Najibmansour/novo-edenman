@@ -23,7 +23,7 @@ const Hero = () => {
                   comfort, design,...
                 </p>
                 <div className="flex justify-center lg:justify-start lg:pl-5">
-                  <button className="rounded-full py-2 px-6 lg:py-3 lg:mt-5 lg:px-10 bg-white text-gray-600 text-xs lg:text-lg font-extrabold text-opacity-65 ">
+                  <button className="transition-transform active:scale-90 rounded-full py-2 px-6 lg:py-3 lg:mt-5 lg:px-10 bg-white text-gray-600 text-xs lg:text-lg font-extrabold text-opacity-65 ">
                     SPLASH
                   </button>
                 </div>
