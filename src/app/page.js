@@ -2,8 +2,9 @@ import Page1 from "./components/Pages/page1";
 
 export default function Home() {
   return (
-    <div>
+    <main className="">
       <Page1></Page1>
-    </div>
+      <div className="w-screen h-screen">asd</div>
+    </main>
   );
 }
