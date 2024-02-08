@@ -29,10 +29,10 @@ const Page1 = (props) => {
               </div>
             </div>
             <div className="lg:row-span-1 row-span-2  flex justify-center h-full order-1 lg:order-2">
-              <Flanel className="lg:w-48 w-28 " />
+              <Flanel className="lg:w-48 w-36" />
             </div>
             <div className="lg:row-span-1 row-span-1 mt-5 flex justify-center items-start lg:pt-10 order-3 lg:order-3">
-              <Boxer className=" lg:w-48 w-28 " />
+              <Boxer className=" lg:w-48 w-36" />
             </div>
           </div>
         </div>
