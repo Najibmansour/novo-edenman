@@ -17,7 +17,7 @@ const Navbar = () => {
       {" "}
       <div className="flex flex-row items-center justify-evenly pb-[4svh] pt-[4svh] lg:justify-center">
         <Logo className="w-7 lg:w-10" />
-        <div className="menu menu-horizontal hidden w-[70%] justify-evenly lg:inline-flex">
+        <div className="menu menu-horizontal hidden w-[70%] justify-evenly lg:inline-flex list-none">
           {navItems.map((item) => (
             <li key={item}>
               <a className="text-xl font-extrabold tracking-wider text-[#15375A]">

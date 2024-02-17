@@ -1,13 +1,17 @@
+import { IslandSection } from "./components/Pages/islandSection";
 import Section1 from "./components/Pages/section1";
-import ProductCarousel from "./components/ProductCarousel";
+import ProductCarousel from "./components/configedUi/ProductCarousel";
+import { InfiniteMovingCardsDemo } from "./components/configedUi/infinitMovingCardsDemo";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Section1 />
-      <div className="flex h-screen items-center justify-center  ">
+      <div className="center mt-20 flex items-center justify-center lg:mt-0">
         <ProductCarousel />
       </div>
+      <InfiniteMovingCardsDemo />
+      <IslandSection />
     </main>
   );
 }

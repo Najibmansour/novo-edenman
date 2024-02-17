@@ -8,11 +8,11 @@ const ProductBox = ({ type, title, description }) => {
   if (type === "primary") {
     titleColor = "text-4xl font-semibold text-primary lg:text-7xl";
     buttonColor =
-      "mt-4 rounded-full bg-primary px-6 py-3 font-bold tracking-widest text-white";
+      "mt-4 rounded-full bg-primary px-6 py-3 font-bold tracking-widest text-gray-100";
   } else {
     titleColor = "text-4xl font-semibold text-secondary lg:text-7xl";
     buttonColor =
-      "mt-4 rounded-full bg-secondary px-6 py-3 font-bold tracking-widest text-white";
+      "mt-4 rounded-full bg-secondary px-6 py-3 font-bold tracking-widest text-gray-100";
   }
 
   return (
@@ -26,14 +26,16 @@ const ProductBox = ({ type, title, description }) => {
             utmost flexibilty and comfort, with moisture-wicking properties,
             perfect for all day and every day wear.
           </div>
-          <button className={clsx(`hidden lg:block`, buttonColor)}>
+          <button
+            className={clsx(`hidden text-lg antialiased lg:block`, buttonColor)}
+          >
             DIVE MORE & SHOP
           </button>
         </div>
         <div className="">
           <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]"></div>
         </div>
-        <button className={clsx(`lg:hidden`, buttonColor)}>
+        <button className={clsx(`text-sm antialiased lg:hidden`, buttonColor)}>
           DIVE MORE & SHOP
         </button>
       </div>

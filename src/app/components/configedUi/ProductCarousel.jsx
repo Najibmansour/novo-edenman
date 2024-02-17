@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ProductBox from "./Pages/section2";
+import ProductBox from "../Pages/section2";
 
 export default function ProductCarousel() {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
@@ -17,9 +17,9 @@ export default function ProductCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[90%] "
+      className="lg:h-[85svh] w-[90%] "
       onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      onMouseLeave={plugin.current.play}
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (

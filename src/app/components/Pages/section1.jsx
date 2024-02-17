@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../Hero";
+import Hero from "../configedUi/Hero";
 const Section1 = (props) => {
   return (
     <section
