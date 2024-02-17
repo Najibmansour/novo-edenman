@@ -12,7 +12,7 @@ import {
 import ProductBox from "./Pages/section2";
 
 export default function ProductCarousel() {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
 
   return (
     <Carousel

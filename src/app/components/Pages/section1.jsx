@@ -3,7 +3,7 @@ import Hero from "../Hero";
 const Section1 = (props) => {
   return (
     <section
-      className=" w-[100svw] lg:h-[70svh] h-[85svh] flex justify-center items-center "
+      className="flex h-[85svh] w-[100svw] items-center justify-center lg:h-[70svh] "
       {...props}
     >
       <Hero />

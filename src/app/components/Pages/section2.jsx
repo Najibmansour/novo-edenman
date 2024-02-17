@@ -16,7 +16,7 @@ const ProductBox = ({ type, title, description }) => {
   }
 
   return (
-    <section className="flex w-[100%] items-center justify-center  lg:h-[100svh]">
+    <section className="flex w-[100%] items-center justify-center lg:h-[100svh]">
       <div className="flex w-[80%] flex-col items-center gap-3 lg:w-[70%] lg:flex-row">
         <div className="w-[85%] ">
           <div className={titleColor}>Under O & V Triple Circle</div>
