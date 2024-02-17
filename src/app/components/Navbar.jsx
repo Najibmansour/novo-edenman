@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <nav className="">
       {" "}
-      <div className="flex flex-row justify-evenly lg:justify-center items-center pt-[4svh] pb-[4svh]">
-        <Logo className="lg:w-10 w-7" />
-        <div className="w-[70%] menu menu-horizontal justify-evenly lg:inline-flex hidden">
+      <div className="flex flex-row items-center justify-evenly pb-[4svh] pt-[4svh] lg:justify-center">
+        <Logo className="w-7 lg:w-10" />
+        <div className="menu menu-horizontal hidden w-[70%] justify-evenly lg:inline-flex">
           {navItems.map((item) => (
             <li key={item}>
               <a className="text-xl font-extrabold tracking-wider text-[#15375A]">
@@ -27,7 +27,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <MenuButton className="lg:w-10 w-7 block lg:hidden" />
+        <MenuButton className="block w-7 lg:hidden lg:w-10" />
       </div>
     </nav>
   );

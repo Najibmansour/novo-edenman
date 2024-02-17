@@ -1,10 +1,14 @@
-import Page1 from "./components/Pages/page1";
+import Section1 from "./components/Pages/section1";
+import ProductBox from "./components/Pages/section2";
+import ProductCarousel from "./components/ProductCarousel";
 
 export default function Home() {
   return (
-    <main className="">
-      <Page1></Page1>
-      <div className="w-screen h-screen">asd</div>
+    <main className="overflow-x-hidden">
+      <Section1 />
+      <div className="flex justify-center ">
+        <ProductCarousel />
+      </div>
     </main>
   );
 }

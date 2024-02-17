@@ -5,11 +5,11 @@ import BlobsContainer from "./Blobs/BlobsContainer";
 
 const Hero = () => {
   return (
-    <div className="relative flex justify-center items-center ">
+    <div className="relative flex items-center justify-center ">
       <div className="absolute z-10 flex justify-center">
-        <div className="grid grid-cols-1 grid-rows-5 lg:grid-cols-2 lg:grid-rows-3 w-[70%] h-min ">
-          <div className="flex items-center  justify-center row-span-2 lg:row-span-3 order-2 lg:order-1 ">
-            <div className="text-white w-[85%] lg:w-[100%] ">
+        <div className="grid h-min w-[70%] grid-cols-1 grid-rows-5 lg:grid-cols-2 lg:grid-rows-3 ">
+          <div className="order-2 row-span-2  flex items-center justify-center lg:order-1 lg:row-span-3 ">
+            <div className="w-[85%] text-white lg:w-[100%] ">
               <div>
                 <div className="flex flex-col ">
                   <h2 className="text-3xl lg:text-6xl">
@@ -18,12 +18,12 @@ const Hero = () => {
                   </h2>
                 </div>
 
-                <p className="text-xs lg:text-lg lg:mt-5 my-2 ">
+                <p className="my-2 text-center text-xs lg:mt-5 lg:text-lg">
                   It’s 2024 Spring & Summer collection, available now! include
                   comfort, design,...
                 </p>
                 <div className="flex justify-center lg:justify-start lg:pl-5">
-                  <button className="transition-transform active:scale-90 rounded-full py-2 px-6 lg:py-3 lg:mt-5 lg:px-10 bg-white text-gray-600 text-xs lg:text-lg font-extrabold text-opacity-65 ">
+                  <button className="rounded-full bg-white px-6 py-2 text-xs font-extrabold text-gray-600 text-opacity-65 transition-transform active:scale-90 lg:mt-5 lg:px-10 lg:py-3 lg:text-lg ">
                     SPLASH
                   </button>
                 </div>
@@ -31,10 +31,10 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="lg:row-span-2 row-span-2 flex justify-center lg:justify-end items-end pb-5 order-1 lg:order-2">
+          <div className="order-1 row-span-2 flex items-end justify-center pb-5 lg:order-2 lg:row-span-2 lg:justify-end">
             <Flanel className="w-[70%] lg:w-[50%]" />
           </div>
-          <div className="lg:row-span-1 row-span-1 flex justify-center lg:justify-end lg:items-start items-start pt-5 order-3 lg:order-3">
+          <div className="order-3 row-span-1 flex items-start justify-center pt-5 lg:order-3 lg:row-span-1 lg:items-start lg:justify-end">
             <Boxer className=" w-[70%] lg:w-[50%]" />
           </div>
         </div>
