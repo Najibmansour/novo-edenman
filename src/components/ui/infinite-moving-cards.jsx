@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState ,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -38,12 +38,12 @@ export const InfiniteMovingCards = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards"
+          "forwards",
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse"
+          "reverse",
         );
       }
     }
@@ -64,27 +64,27 @@ export const InfiniteMovingCards = ({
       ref={containerRef}
       className={cn(
         "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
+        className,
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-6 py-4 w-max flex-nowrap",
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-6 py-4",
           start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-28 h-28 max-w-full relative rounded-3xl border border-b-0 flex-shrink-0  px-8 py-6 md:w-40 md:h-40 opacity-40"
+            className="relative h-28 w-28 max-w-full flex-shrink-0 rounded-3xl border border-b-0  px-8 py-6 opacity-40 md:h-40 md:w-40"
             style={{
               background:
                 "linear-gradient(180deg, var(--gray-500), var(--gray-600)",
             }}
             key={item.name}
           >
-            {/* <div className="bg-gray-500 bopacity-30"></div> */}
+            <div className="bg-gray-500 bg-opacity-30"></div>
           </li>
         ))}
       </ul>

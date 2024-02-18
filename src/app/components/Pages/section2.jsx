@@ -22,7 +22,7 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
 
   return (
     <section className="flex w-[100%] items-center justify-center lg:h-[100svh]">
-      <div className="flex w-[80%] flex-col items-center gap-3 lg:w-[70%] lg:flex-row lg:items-start">
+      <div className="flex w-[90%] flex-col items-center gap-3 lg:w-[70%] lg:flex-row lg:items-start">
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>
           <div className="mt-4 text-sm lg:text-lg">{description}</div>
@@ -34,11 +34,11 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
         </div>
         <div className="">
           <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />
-          <div className="mt-2 flex flex-row-reverse gap-2  pr-4">
+          <div className="mt-2 flex flex-row-reverse gap-2 pr-4">
             {fabric?.map((fab, ind) => (
               <small
                 className={clsx(
-                  "rounded-full bg-primary bg-opacity-15 px-3 py-1 text-xs text-white",
+                  "rounded-full bg-primary bg-opacity-15 px-2 py-1 text-xs text-white",
                   badgeColor,
                 )}
                 key={ind}
