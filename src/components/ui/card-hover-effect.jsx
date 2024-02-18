@@ -4,31 +4,28 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-export const HoverEffect = ({
-  items,
-  className,
-}) => {
+export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
-        className
+        "grid grid-cols-1 py-10  md:grid-cols-2  lg:grid-cols-3",
+        className,
       )}
     >
       {items.map((item, idx) => (
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="group relative  block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#15375A] dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 block h-full w-full rounded-3xl bg-[#15375A]  dark:bg-slate-800/[0.8]"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -44,8 +41,11 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <div className="flex h-[60vh] flex-col">
+              <CardTitle>{item.title}</CardTitle>
+              <div className="mt-2 h-full w-full rounded-2xl bg-gray-400 bg-opacity-30 p-4"></div>
+              <CardDescription>{item.description}</CardDescription>
+            </div>
           </Card>
         </Link>
       ))}
@@ -53,45 +53,42 @@ export const HoverEffect = ({
   );
 };
 
-export const Card = ({
-  className,
-  children,
-}) => {
+export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-gray-300  border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-        className
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl  border border-transparent bg-gray-300 p-4 group-hover:border-slate-300 dark:border-white/[0.2]",
+        className,
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-0">{children}</div>
       </div>
     </div>
   );
 };
-export const CardTitle = ({
-  className,
-  children,
-}) => {
+export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("text-zinc-700 font-bold text-center text-3xl tracking-wide mt-4", className)}>
+    <h4
+      className={cn(
+        "mt-2 text-center text-3xl font-bold tracking-wide text-zinc-700",
+        className,
+      )}
+    >
       {children}
     </h4>
   );
 };
-export const CardDescription = ({
-  className,
-  children,
-}) => {
+export const CardDescription = ({ className, children }) => {
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-md",
-        className
+        "text-md mt-4 leading-relaxed tracking-wide text-zinc-400",
+        className,
       )}
     >
-     Asperiores dolore natus accusamus excepturi veniam eaque et consequatur. Necessitatibus qui et adipisci aut labore.
+      Asperiores dolore natus accusamus excepturi veniam eaque et consequatur.
+      Necessitatibus qui et adipisci aut labore.
     </p>
   );
 };
