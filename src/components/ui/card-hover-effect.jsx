@@ -43,7 +43,7 @@ export const HoverEffect = ({ items, className }) => {
           <Card>
             <div className="flex h-[60vh] flex-col">
               <CardTitle>{item.title}</CardTitle>
-              <div className="mt-2 h-full w-full rounded-2xl bg-gray-400 bg-opacity-30 p-4"></div>
+              <div className="mt-2 h-[50%] w-[100%] rounded-2xl bg-gray-400 bg-opacity-30 p-4"></div>
               <CardDescription>{item.description}</CardDescription>
             </div>
           </Card>
@@ -87,8 +87,7 @@ export const CardDescription = ({ className, children }) => {
         className,
       )}
     >
-      Asperiores dolore natus accusamus excepturi veniam eaque et consequatur.
-      Necessitatibus qui et adipisci aut labore.
+      {children}
     </p>
   );
 };

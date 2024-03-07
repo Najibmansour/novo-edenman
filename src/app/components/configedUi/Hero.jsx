@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="w-[85%] text-white lg:w-[100%] ">
               <div>
                 <div className="flex flex-col ">
-                  <h2 className="text-3xl pl-3 lg:text-6xl">
+                  <h2 className="pl-3 text-3xl lg:text-6xl">
                     <span className="block ">Dive into</span>
                     <span className="block  font-extrabold ">Aqua Chic</span>
                   </h2>

@@ -1,9 +1,8 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
-
 export function IslandSection() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="mx-auto max-w-5xl px-8">
       <HoverEffect items={projects} />
     </div>
   );
@@ -11,21 +10,19 @@ export function IslandSection() {
 export const projects = [
   {
     title: "Facts",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
+    description: "Very comfortable functional and durable underwear",
     link: "/",
   },
   {
     title: "History",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "Edenman is a mens underwear brand based in Lebanon that offers to a variety",
     link: "/",
   },
   {
     title: "Styles",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Your Underwear for evryday use, with a smooth elastic wastband that is friendly to your skin and an incredibly soft natural cotton fabric with neat seam lines that give you a lot of elasticity and a natural feeling ",
     link: "/",
   },
-  
 ];

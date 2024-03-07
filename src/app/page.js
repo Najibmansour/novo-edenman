@@ -1,3 +1,5 @@
+import CarouselCustom from "@/components/carousselCustom";
+import Footer from "./components/Pages/Footer";
 import { IslandSection } from "./components/Pages/islandSection";
 import Section1 from "./components/Pages/section1";
 import ProductCarousel from "./components/configedUi/ProductCarousel";
@@ -12,6 +14,8 @@ export default function Home() {
       </div>
       <InfiniteMovingCardsDemo />
       <IslandSection />
+      <Footer />
+      {/* <CarouselCustom /> */}
     </main>
   );
 }

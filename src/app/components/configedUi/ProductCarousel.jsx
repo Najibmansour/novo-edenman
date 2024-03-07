@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ProductBox from "../Pages/section2";
+import ProductBox from "../Pages/ProductBox";
 
 const boxerProducts = [
   {
