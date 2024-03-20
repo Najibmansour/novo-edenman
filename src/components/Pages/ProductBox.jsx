@@ -27,7 +27,10 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
           <div className={titleColor}>{title}</div>
           <div className="mt-4 text-sm lg:text-lg">{description}</div>
           <button
-            className={clsx(`hidden text-lg antialiased lg:block`, buttonColor)}
+            className={clsx(
+              `hover hidden text-lg antialiased lg:block`,
+              buttonColor,
+            )}
           >
             DIVE MORE & SHOP
           </button>

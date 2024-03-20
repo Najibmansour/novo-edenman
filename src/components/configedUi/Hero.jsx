@@ -6,24 +6,24 @@ import BlobsContainer from "../Blobs/BlobsContainer";
 const Hero = () => {
   return (
     <div className="relative flex items-center justify-center ">
-      <div className="absolute z-10 flex justify-center">
-        <div className="grid h-min w-[70%] grid-cols-1 grid-rows-5 lg:grid-cols-2 lg:grid-rows-3 ">
+      <div className="absolute z-20 flex justify-center">
+        <div className="grid  w-[70%] grid-cols-1 grid-rows-5 lg:grid-cols-2 lg:grid-rows-3 ">
           <div className="order-2 row-span-2  flex items-center justify-center lg:order-1 lg:row-span-3 ">
             <div className="w-[85%] text-white lg:w-[100%] ">
               <div>
                 <div className="flex flex-col ">
-                  <h2 className="pl-3 text-3xl lg:text-6xl">
+                  <h2 className=" text-3xl lg:text-6xl">
                     <span className="block ">Dive into</span>
                     <span className="block  font-extrabold ">Aqua Chic</span>
                   </h2>
                 </div>
 
-                <p className="my-2 text-center text-xs lg:mt-5 lg:text-lg">
+                <p className="my-2 text-center text-xs lg:mt-5 lg:text-left lg:text-lg">
                   It’s 2024 Spring & Summer collection, available now! include
                   comfort, design,...
                 </p>
-                <div className="flex justify-center lg:justify-start lg:pl-5">
-                  <button className="rounded-full bg-white px-6 py-2 text-xs font-extrabold text-gray-600 text-opacity-65 transition-transform active:scale-90 lg:mt-5 lg:px-10 lg:py-3 lg:text-lg ">
+                <div className="flex justify-center lg:justify-start lg:pl-5 ">
+                  <button className="custom-button-anim rounded-full bg-white px-6 py-2 text-xs font-extrabold text-gray-600 text-opacity-65  lg:mt-5 lg:px-10 lg:py-3 lg:text-lg ">
                     SPLASH
                   </button>
                 </div>
