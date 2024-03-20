@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-50">
-      <div className=" flex flex-row items-center justify-evenly pb-[3svh] pt-[4svh] filter backdrop-blur-md lg:justify-center">
+    <nav className="fixed z-50 w-full border-b-[1px] border-white border-opacity-50">
+      <div className=" flex flex-row items-center justify-evenly bg-white bg-opacity-25 pb-[3svh] pt-[4svh] filter backdrop-blur-md lg:justify-center">
         <Logo className="w-7 lg:w-10" />
         <div className="menu menu-horizontal hidden w-[70%] list-none justify-evenly lg:inline-flex">
           {navItems.map((item) => (

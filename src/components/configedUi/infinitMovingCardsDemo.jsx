@@ -12,8 +12,6 @@ export function InfiniteMovingCardsDemo() {
         direction="right"
         speed="slow"
       />
-
-      {/* <Button size="sm">DIVE INTO VIBRANT HUES AND ARTFUL DESIGNS</Button> */}
     </div>
   );
 }

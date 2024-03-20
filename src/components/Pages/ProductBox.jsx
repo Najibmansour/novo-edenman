@@ -37,7 +37,7 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
         </div>
         <div className="">
           <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />
-          <div className="mt-2 flex flex-row-reverse gap-2 pr-4">
+          {/* <div className="mt-2 flex flex-row-reverse gap-2 pr-4">
             {fabric?.map((fab, ind) => (
               <small
                 className={clsx(
@@ -49,7 +49,7 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
                 {fab.name} - {fab.percent}
               </small>
             ))}
-          </div>
+          </div> */}
         </div>
         <button className={clsx(`text-sm antialiased lg:hidden`, buttonColor)}>
           DIVE MORE & SHOP

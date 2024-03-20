@@ -3,10 +3,12 @@ import Hero from "../configedUi/Hero";
 const Section1 = (props) => {
   return (
     <section
-      className="flex h-[90svh] items-start justify-center lg:h-[87svh] lg:items-center "
+      className="flex h-screen items-center justify-center  lg:h-screen lg:items-center "
       {...props}
     >
-      <Hero />
+      <div className="mt-12">
+        <Hero className="" />
+      </div>
     </section>
   );
 };
