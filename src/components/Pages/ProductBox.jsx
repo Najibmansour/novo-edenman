@@ -1,7 +1,16 @@
 import clsx from "clsx";
+import Image from "next/image";
 import React from "react";
 
-const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
+const ProductBox = ({
+  type,
+  title,
+  description,
+  fabric,
+  wash,
+  variants,
+  images,
+}) => {
   let titleColor = "";
   let buttonColor = "";
   let badgeColor = "";
@@ -18,7 +27,7 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
     badgeColor = "bg-secondary";
   }
 
-  console.log(fabric);
+  console.log(images);
 
   return (
     <section className="flex w-[100%] items-center justify-center lg:h-[100svh]">
@@ -36,20 +45,17 @@ const ProductBox = ({ type, title, description, fabric, wash, variants }) => {
           </button>
         </div>
         <div className="">
-          <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />
-          {/* <div className="mt-2 flex flex-row-reverse gap-2 pr-4">
-            {fabric?.map((fab, ind) => (
-              <small
-                className={clsx(
-                  "rounded-full bg-primary bg-opacity-15 px-2 py-1 text-xs text-white",
-                  badgeColor,
-                )}
-                key={ind}
-              >
-                {fab.name} - {fab.percent}
-              </small>
-            ))}
-          </div> */}
+          {images ? (
+            <Image
+              className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[28vw] lg:w-[50vw]"
+              width={500}
+              height={500}
+              src={images[0]}
+              alt="test"
+            />
+          ) : (
+            <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />
+          )}
         </div>
         <button className={clsx(`text-sm antialiased lg:hidden`, buttonColor)}>
           DIVE MORE & SHOP
