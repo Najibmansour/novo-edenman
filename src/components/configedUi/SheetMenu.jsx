@@ -21,7 +21,7 @@ export function SheetMenu({ navItems }) {
           <MenuButton className="block w-7 lg:hidden lg:w-10" />
         </button>
       </SheetTrigger>
-      <SheetContent className="rounded-l-3xl opacity-90 backdrop-blur-3xl">
+      <SheetContent className="rounded-l-3xl ">
         <div className="grid gap-10 py-4">
           {navItems.map((item) => (
             <li key={item}>
