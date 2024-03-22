@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProductBox from "../Pages/ProductBox";
-import products from "@/app/products";
+import { products } from "@/app/products";
 
 export default function ProductCarousel() {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));

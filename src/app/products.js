@@ -77,7 +77,7 @@ const products = [
     wash: [],
     variants: [],
     type: "primary",
-    images: images[""],
+    images: images["Boxers"],
   },
   {
     title: "Ultra Stretch Undershirt O neck",
@@ -87,7 +87,7 @@ const products = [
     wash: [],
     variants: [],
     type: "secondary",
-    images: images[""],
+    images: images["Boxers"],
   },
   {
     title: "Classic Fresh Tank",
@@ -97,8 +97,20 @@ const products = [
     wash: [],
     variants: [],
     type: "primary",
-    images: images[""],
+    images: images["Boxers"],
   },
 ];
 
-export default products;
+const getImages = (arr) => {
+  const imageArr = [];
+  arr.forEach((item, i) => {
+    // console.log(item.images);
+    imageArr.push(...item.images);
+  });
+
+  return imageArr;
+};
+
+const productsImages = getImages(products);
+
+export { products, productsImages };

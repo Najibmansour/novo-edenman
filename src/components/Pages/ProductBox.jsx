@@ -27,11 +27,11 @@ const ProductBox = ({
     badgeColor = "bg-secondary";
   }
 
-  console.log(images);
+  // console.log(images);
 
   return (
-    <section className="flex w-[100%] items-center justify-center lg:h-[100svh]">
-      <div className="flex w-[90%] flex-col items-center gap-3 lg:w-[70%] lg:flex-row lg:items-start">
+    <section className="flex w-[100%] items-center justify-center lg:h-screen lg:items-start lg:pt-14">
+      <div className="flex w-[90%] flex-col items-start  gap-3 lg:w-[70%] lg:flex-row lg:items-start ">
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>
           <div className="mt-4 text-sm lg:text-lg">{description}</div>
@@ -46,13 +46,15 @@ const ProductBox = ({
         </div>
         <div className="">
           {images ? (
-            <Image
-              className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[28vw] lg:w-[50vw]"
-              width={500}
-              height={500}
-              src={images[0]}
-              alt="test"
-            />
+            <div className="relative h-[80vw] w-[80vw] lg:h-[30vw] lg:w-[30vw]">
+              <Image
+                className="  rounded-3xl bg-gray-500 bg-opacity-30 "
+                fill
+                // objectFit="contain"
+                src={images[1]}
+                alt="test"
+              />
+            </div>
           ) : (
             <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />
           )}
