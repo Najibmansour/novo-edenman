@@ -86,11 +86,12 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <Image
+              className=" rounded-3xl"
               alt="product"
               key={idx}
               src={item}
               fill
-              objectFit="contain"
+              objectFit="fill"
             />
           </li>
         ))}
