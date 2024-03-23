@@ -50,6 +50,7 @@ const ProductBox = ({
               <Image
                 className="  rounded-3xl bg-gray-500 bg-opacity-30 "
                 fill
+                sizes="500px"
                 // objectFit="contain"
                 src={images[1]}
                 alt="test"

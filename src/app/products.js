@@ -12,11 +12,24 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context("../app/images/products", true));
+const images = importAll(require.context("../images/products", true));
 
 // console.table(images[""]);
 
 const products = [
+  {
+    title: "Dad And Son",
+    description:
+      "For small boys, their fathers are their first superheroes and they aspire to act and appear like them. Developing an idea that allows your son to share his role model appearances with you during the day helps deepen the relationship between father and son without getting in the way of clothing regulations at work or school.",
+    fabric: [
+      { name: "Cotton", percent: "95" },
+      { name: "Elastane", percent: "5" },
+    ],
+    wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+    variants: [],
+    type: "primary",
+    images: images["DAD SON Boxer Brief"],
+  },
   {
     title: "Soft Hand Cotton Briefs",
     description:
@@ -30,6 +43,7 @@ const products = [
     type: "primary",
     images: images["Briefs"],
   },
+
   {
     title: "Cottony Men Relax Boxer Briefs",
     description:
@@ -77,7 +91,7 @@ const products = [
     wash: [],
     variants: [],
     type: "primary",
-    images: images["Boxers"],
+    images: images["Vneck"],
   },
   {
     title: "Ultra Stretch Undershirt O neck",
@@ -87,7 +101,7 @@ const products = [
     wash: [],
     variants: [],
     type: "secondary",
-    images: images["Boxers"],
+    images: images["Oneck"],
   },
   {
     title: "Classic Fresh Tank",
@@ -97,7 +111,7 @@ const products = [
     wash: [],
     variants: [],
     type: "primary",
-    images: images["Boxers"],
+    images: images["Tank"],
   },
 ];
 

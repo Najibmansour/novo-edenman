@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({ items, className }) => {
@@ -15,9 +14,8 @@ export const HoverEffect = ({ items, className }) => {
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
+        <div
+          key={idx}
           className="group relative  block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -44,10 +42,10 @@ export const HoverEffect = ({ items, className }) => {
             <div className="flex h-[60vh] flex-col">
               <CardTitle>{item.title}</CardTitle>
               <div className="mt-2 h-[50%] w-[100%] rounded-2xl bg-gray-400 bg-opacity-30 p-4"></div>
-              <CardDescription>{item.description}</CardDescription>
+              <CardDescription>{item.desc}</CardDescription>
             </div>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );
@@ -81,13 +79,13 @@ export const CardTitle = ({ className, children }) => {
 };
 export const CardDescription = ({ className, children }) => {
   return (
-    <p
+    <div
       className={cn(
-        "text-md mt-4 leading-relaxed tracking-wide text-zinc-400",
+        "text-md mt-4 leading-relaxed tracking-wide text-zinc-500",
         className,
       )}
     >
       {children}
-    </p>
+    </div>
   );
 };
