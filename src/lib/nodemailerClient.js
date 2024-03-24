@@ -1,11 +1,19 @@
 import nodemailer from "nodemailer";
 
+const email = process.env.NEXT_PUBLIC_NODEMAILER_MAIL;
+const pass = process.env.NEXT_PUBLIC_NODEMAILER_PASS;
+
 export const tpt = nodemailer.createTransport({
-  host: "mail.novo-concepts.com",
-  port: 465,
-  secure: true, // Use `true` for port 465, `false` for all other ports
+  host: process.env.NEXT_PUBLIC_NODEMAILER_HOST,
+  port: process.env.NEXT_PUBLIC_NODEMAILER_PORT,
+  secure: true,
   auth: {
-    user: "edenmen-info@novo-concepts.com",
-    pass: "edenmeninfo2024",
+    user: email,
+    pass: pass,
   },
 });
+
+export const mailOptions = {
+  from: email,
+  to: email,
+};

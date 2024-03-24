@@ -1,11 +1,12 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
-
+  // console.log(items[0]);
   return (
     <div
       className={cn(
@@ -41,7 +42,15 @@ export const HoverEffect = ({ items, className }) => {
           <Card>
             <div className="flex h-[60vh] flex-col">
               <CardTitle>{item.title}</CardTitle>
-              <div className="mt-2 h-[50%] w-[100%] rounded-2xl bg-gray-400 bg-opacity-30 p-4"></div>
+              <div className="relative mt-2 h-[50%] w-[100%] rounded-2xl bg-gray-400 bg-opacity-30">
+                <Image
+                className="rounded-2xl"
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="200px"
+                ></Image>
+              </div>
               <CardDescription>{item.desc}</CardDescription>
             </div>
           </Card>

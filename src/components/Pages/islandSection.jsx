@@ -1,5 +1,9 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
+import  fact  from "@/images/Island/fact.jpg";
+import  history  from "@/images/Island/history.jpg";
+import  style  from "@/images/Island/style.jpg";
+
 export function IslandSection() {
   return (
     <div className="mx-auto max-w-5xl px-8">
@@ -9,20 +13,35 @@ export function IslandSection() {
 }
 export const projects = [
   {
+    image: fact,
     title: "Facts",
-    description: "Very comfortable functional and durable underwear",
-    link: "/",
+    desc: (
+      <p>
+        <span className="font-semibold">Very comfortable</span>,
+        functional,durable and plus size underwear.
+      </p>
+    ),
   },
   {
+    image: history,
     title: "History",
-    description:
-      "Edenman is a mens underwear brand based in Lebanon that offers to a variety",
-    link: "/",
+    desc: (
+      <p>
+        <span className="font-semibold">Everyday use</span>, friendly to your
+        skin and an incredibly{" "}
+        <span className="font-semibold">soft natural</span> cotton fabric.
+      </p>
+    ),
   },
   {
+    image: style,
     title: "Styles",
-    description:
-      "Your Underwear for evryday use, with a smooth elastic wastband that is friendly to your skin and an incredibly soft natural cotton fabric with neat seam lines that give you a lot of elasticity and a natural feeling ",
-    link: "/",
+    desc: (
+      <p>
+        Edenmen is a men&apos;s underwear brand based in{" "}
+        <span className="font-semibold">Lebanon</span> that offers to a{" "}
+        <span className="font-semibold">variety</span>.
+      </p>
+    ),
   },
 ];

@@ -1,4 +1,4 @@
-import { productsImages } from "@/app/products";
+import {  products , productsImages} from "@/app/products";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import React from "react";
 
@@ -10,7 +10,8 @@ export function InfiniteMovingCardsDemo() {
     }
   }
 
-  shuffleArray(productsImages);
+  // const productsImages = getImages(products);
+  // console.log(getImages(products).length);
 
   return (
     <div className="dark:bg-grid-white/[0.05] relative flex h-[40svh] flex-col  items-center justify-center overflow-hidden rounded-md antialiased dark:bg-black">

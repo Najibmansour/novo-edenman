@@ -97,74 +97,59 @@ body {
 @keyframes blob1 {
   0% {
     transform: translate($randStarty2 + px, $randStartx1 + px)
-      rotate(-$randRot1 + deg);
-  }
+      }
   33% {
     transform: translate($randStartx2 + px, $randStarty3 + px)
-      rotate(-$randRot2 + deg);
-  }
+      }
   66% {
     transform: translate($randStarty4 + px, $randStartx2 + px)
-      rotate($randRot4 + deg);
-  }
+      }
   100% {
     transform: translate($randStarty2 + px, $randStartx1 + px)
-      rotate(-$randRot1 + deg);
-  }
+      }
 }
 @keyframes blob2 {
   0% {
     transform: translate($randStarty1 + px, $randStartx2 + px)
-      rotate($randRot2 + deg);
-  }
+      }
   33% {
     transform: translate($randStartx2 + px, $randStartx4 + px)
-      rotate($randRot4 + deg);
-  }
+      }
   66% {
     transform: translate($randStartx3 + px, $randStartx2 + px)
-      rotate(-$randRot1 + deg);
-  }
+      }
   100% {
     transform: translate($randStarty1 + px, $randStartx2 + px)
-      rotate($randRot2 + deg);
-  }
+      }
 }
 @keyframes blob3 {
   0% {
     transform: translate($randStarty4 + px, $randStartx3 + px)
-      rotate(-$randRot2 + deg);
-  }
+      }
   33% {
     transform: translate($randStartx2 + px, $randStartx4 + px)
-      rotate($randRot4 + deg);
-  }
+      }
   66% {
     transform: translate($randStartx3 + px, $randStartx2 + px)
-      rotate(90-$randRot1 + deg);
+      
   }
   100% {
     transform: translate($randStarty4 + px, $randStartx3 + px)
-      rotate($randRot2 + deg);
-  }
+      }
 }
 @keyframes blob4 {
   0% {
     transform: translate($randStarty1 + px, $randStartx2 + px)
-      rotate(-$randRot2 + deg);
-  }
+      }
   33% {
     transform: translate($randStartx2 + px, $randStartx4 + px)
-      rotate($randRot4 + deg);
-  }
+      }
   66% {
     transform: translate($randStartx3 + px, $randStartx2 + px)
-      rotate(-$randRot1 + deg);
-  }
+      }
   100% {
     transform: translate($randStarty1 + px, $randStartx2 + px)
-      rotate($randRot2 + deg);
-  }
+      }
 }
 
 .shape1 {
