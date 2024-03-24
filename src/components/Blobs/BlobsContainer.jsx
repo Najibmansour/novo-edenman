@@ -12,23 +12,23 @@ const BlobsContainer = (props) => {
           <Blob
             variant={3}
             color="#A97C50"
-            className="shape1 absolute -left-[calc(100vh-(40rem/2))] top-[calc(100vh-(80rem/2))]  w-[70rem] "
+            className="shape1 absolute -left-[calc(100vh-(40rem/2))] top-[calc(100vh-(80rem/2))]  w-[70rem] mix-blend-overlay "
           />
           <Blob
             variant={4}
             color="#15375A"
-            className="shape2 absolute -right-[calc(40rem/2)] top-[calc(100vh-(80rem/2))] w-[80rem] "
+            className="shape2 absolute -right-[calc(40rem/2)] top-[calc(100vh-(80rem/2))] w-[80rem]  mix-blend-overlay"
           />
           <Blob
             variant={2}
             color="#A97C50"
-            className="shape3 absolute -right-[calc(10rem/2)] top-[calc(0vh-80rem/2)] w-[70rem]"
+            className="shape3 absolute -right-[calc(10rem/2)] top-[calc(0vh-80rem/2)] w-[70rem] mix-blend-overlay"
           />
 
           <Blob
             variant={3}
             color="#15375A"
-            className="shape4 absolute -left-[calc(60rem/2)] top-[calc(0vh-80rem/2)] w-[80rem]"
+            className="shape4 absolute -left-[calc(60rem/2)] top-[calc(0vh-80rem/2)] w-[80rem] mix-blend-overlay"
           />
         </div>
       </div>
