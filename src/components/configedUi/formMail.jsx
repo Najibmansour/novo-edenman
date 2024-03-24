@@ -1,4 +1,5 @@
 "use client";
+import { sendForm } from "@/lib/api/sendform";
 import { cn } from "@/lib/utils";
 import { React, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -23,6 +24,7 @@ const FormMail = () => {
 
   const onSubmit = (e) => {
     console.log(e);
+    sendForm(e).then((res)=>{console.log(res);})
   };
 
   return (

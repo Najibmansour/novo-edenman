@@ -21,12 +21,12 @@ const Footer = (props) => {
         <BlobsContainer className="-z-50"></BlobsContainer>
       </section>
       <section className="flex flex-row w-full justify-center my-3   gap-4 text-[#17395C]">
-      <Link href="/">
-        <Instagram className="lg:w-16 lg:h-16 w-8 h-8 opacity-95" strokeWidth={1.7} />
-        </Link>
-        <Link href="/">
-        <Facebook className="lg:w-16 lg:h-16 w-8 h-8 opacity-95" strokeWidth={1.7} />
-        </Link>
+      <Link target="_blank" href="https://www.instagram.com/edenmen.underwear">
+        <Instagram className="lg:w-14 lg:h-14 w-8 h-8 opacity-95" strokeWidth={1.7} />
+      </Link>
+      <Link target="_blank" href="https://www.facebook.com/edenmen.lb">
+        <Facebook className="lg:w-14 lg:h-14 w-8 h-8 opacity-95" strokeWidth={1.7} />
+      </Link>
       </section>
       <small className="-mb-5 text-[#17395C] tracking-widest ">&copy; Copyright 2024, Edenmen</small>
     </footer>
