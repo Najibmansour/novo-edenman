@@ -11,20 +11,23 @@ const FormMail = () => {
 
   const form = useRef();
 
-  const [name, setName] = useState();
-  const [mail, setMail] = useState();
-  const [desc, setDesc] = useState();
-
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (e) => {
-    console.log(e);
-    sendForm(e).then((res)=>{console.log(res);})
+    if (e["bot_fiedld"] == "") {
+      // console.log(e);
+      sendForm(e).then((res)=>{console.log(res);})
+      
+    }
+    //resets the form 
+    reset()
+    //
   };
 
   return (
@@ -41,8 +44,6 @@ const FormMail = () => {
             NAME:
           </label>
           <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
             type="text"
             id="name"
             className={cn(text, "")}
@@ -68,8 +69,6 @@ const FormMail = () => {
             EMAIL:
           </label>
           <input
-            value={mail}
-            onChange={(e) => setMail(e.target.value)}
             id="mail"
             className={cn(text, "")}
             placeholder="johndoe@email.com"
@@ -96,9 +95,7 @@ const FormMail = () => {
           </label>
           <div>
             <textarea
-              value={desc}
-              onChange={(e) => setDesc(e.target.value)}
-              id="comment"
+              id="message"
               rows="6"
               className={cn(text, "")}
               placeholder="Message ..."
@@ -117,6 +114,8 @@ const FormMail = () => {
             )}
           </div>
         </div>
+        <input name='bot-field' placeholder='do not fill this' type='hidden' {...register("bot_fiedld")}/>
+        
 
         
       </div>
