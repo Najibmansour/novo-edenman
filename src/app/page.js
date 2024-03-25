@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Section1 />
-      <div className="mt-20 flex items-end justify-center lg:mt-0">
+      <div className="mt-20 flex items-end justify-center lg:mt-0" id="products">
         <ProductCarousel />
       </div>
       <InfiniteMovingCardsDemo />

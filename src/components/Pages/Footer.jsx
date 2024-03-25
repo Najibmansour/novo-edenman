@@ -14,6 +14,7 @@ const Footer = (props) => {
     <footer
       className="flex h-screen w-screen items-center flex-col justify-center "
       {...props}
+      id="contact"
     >
       <section className="relative flex items-center justify-center ">
         <TextLogo className="w-[90%] px-3 lg:w-[30vw] lg:p-0 absolute lg:top-14 top-8 lg:left-24" /> 

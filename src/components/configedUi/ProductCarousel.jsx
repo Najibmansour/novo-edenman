@@ -27,7 +27,7 @@ export default function ProductCarousel() {
             { title, description, fabric, wash, variants, type, images },
             index,
           ) => (
-            <CarouselItem key={index} className="w-[100%]">
+            <CarouselItem key={index} className="w-[100%] h-min">
               <ProductBox
                 type={type}
                 title={title}

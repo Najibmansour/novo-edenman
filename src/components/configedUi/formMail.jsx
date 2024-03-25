@@ -27,6 +27,7 @@ const FormMail = () => {
     }
     //resets the form 
     reset()
+    toast.success("Message sent successfully")
     //
   };
 

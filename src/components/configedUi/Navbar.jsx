@@ -3,15 +3,28 @@ import Logo from "../svgs/Logo";
 import MenuButton from "./MenuButton";
 import { SheetMenu } from "./SheetMenu";
 import { isMobile } from "react-device-detect";
+import Link from "next/link";
 
 const Navbar = () => {
   const navItems = [
-    { text: "COLLECTION" },
-    { text: "PRODUCTS" },
-    { text: "DESIGN" },
-    { text: "BLOG" },
-    { text: "CONTACT" },
-    { text: "IDENTITY" },
+    { 
+      href: "#",
+      text: "COLLECTION" },
+    { 
+      href: "#products",
+      text: "PRODUCTS" },
+    { 
+      href: "#",
+      text: "DESIGN" },
+    { 
+      href: "#",
+      text: "BLOG" },
+    { 
+      href: "#contact",
+      text: "CONTACT" },
+    { 
+      href: "#",
+      text: "IDENTITY" },
   ];
 
   return (
@@ -21,9 +34,9 @@ const Navbar = () => {
         <div className="menu menu-horizontal hidden w-[70%] list-none justify-evenly lg:inline-flex">
           {navItems.map((item) => (
             <li key={item}>
-              <a className="hover-underline-animation text-xl font-extrabold tracking-wider text-[#15375A] after:bg-[#15375A]">
+              <Link href={item.href} className="hover-underline-animation text-xl font-extrabold tracking-wider text-[#15375A] after:bg-[#15375A]">
                 {item.text}
-              </a>
+              </Link>
             </li>
           ))}
         </div>
