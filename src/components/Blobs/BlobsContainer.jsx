@@ -8,7 +8,7 @@ const BlobsContainer = (props) => {
         <div className="absolute flex ">{props.children}</div>
       </div>
       <div className="relative h-[calc(100vh*0.8)] w-[calc(100vw*0.8)] overflow-hidden  rounded-[2.5rem] lg:h-[calc(100vh*0.8)]  lg:w-[calc(100vw*0.8)] lg:rounded-[5rem]">
-        <div className="blur-[250px] grayscale-[0.3] contrast-125 filter">
+        <div className="blur-[100px] grayscale-[0.3] contrast-125 filter">
           <Blob
             variant={3}
             color="#A97C50"
