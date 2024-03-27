@@ -56,7 +56,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -64,10 +64,12 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden ",
+        "scroller relative z-20  max-w-full overflow-hidden ",
         className,
       )}
     >
+      <div className="absolute bg-gradient-to-r from-white  to-transparent w-full h-full z-50 from-15% to-30% pointer-events-none"/>
+      <div className="absolute bg-gradient-to-l from-white  to-transparent w-full h-full z-50 from-15% to-30% pointer-events-none"/>
       <ul
         ref={scrollerRef}
         className={cn(
@@ -86,7 +88,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <Image
-              className=" rounded-3xl"
+              className="rounded-3xl"
               alt={`product-image-${idx}`}
               src={item}
               sizes="150px"
