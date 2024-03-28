@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../svgs/Logo";
-import MenuButton from "./MenuButton";
 import { SheetMenu } from "./SheetMenu";
 import { isMobile } from "react-device-detect";
 import Link from "next/link";
@@ -28,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed z-50 w-full border-b-[1px] border-white border-opacity-50">
+    <nav className="fixed z-40 w-full border-b-[1px] border-white border-opacity-50">
       <div className=" flex flex-row items-center justify-evenly bg-white bg-opacity-25 pb-[3svh] pt-[4svh] filter backdrop-blur-md lg:justify-center">
         <Link href="/">
           <Logo className="w-7 lg:w-10" />

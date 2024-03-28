@@ -35,7 +35,7 @@ const FormMail = () => {
     <form
       ref={form}
       onSubmit={handleSubmit(onSubmit)}
-      className="absolute bottom-0 z-50 flex flex-col p-5 lg:w-[85%] lg:h-[75%] h-min"
+      className="absolute bottom-0 z-40 flex flex-col p-5 lg:w-[85%] lg:h-[75%] h-min"
     >
       <div className="lg:flex-row h-min flex-col gap-2 lg:gap-7 flex">
       <div className="flex w-full flex-wrap items-start h-min gap-2 lg:gap-7 ">

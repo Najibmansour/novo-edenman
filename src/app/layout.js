@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Navbar from "../components/configedUi/Navbar";
 import { Toaster } from "sonner";
+import BttomRightWhatsapp from "@/components/ui/bot_right_wtsp_icon";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,9 +43,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className + ""}>
+      <body className={inter.className + "relative"}>
         <Toaster position="top-center" richColors />
         <Navbar />
+        <BttomRightWhatsapp />
 
         <main>{children}</main>
       </body>

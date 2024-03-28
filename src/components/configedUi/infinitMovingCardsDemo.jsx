@@ -1,4 +1,4 @@
-import {  products , productsImages} from "@/app/products";
+import { productsImages} from "@/app/products";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import React from "react";
 

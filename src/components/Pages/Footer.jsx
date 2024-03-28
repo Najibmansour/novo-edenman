@@ -5,9 +5,8 @@ import FormMail from "../configedUi/formMail";
 import Link from "next/link";
 
 //icons/////////////////
-import { Facebook, FacebookIcon, Instagram } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
-////////////////////
 
 const Footer = (props) => {
   return (
@@ -19,9 +18,9 @@ const Footer = (props) => {
       <section className="relative flex items-center justify-center ">
         <TextLogo className="w-[90%] px-3 lg:w-[30vw] lg:p-0 absolute lg:top-14 top-8 lg:left-24" /> 
         <FormMail />
-        <BlobsContainer className="-z-50"></BlobsContainer>
+        <BlobsContainer className="-z-40"/>
       </section>
-      <section className="flex flex-row w-full justify-center my-3   gap-4 text-[#17395C]">
+      <section className="flex flex-row w-full justify-center my-3   gap-2 text-[#17395C]">
       <Link target="_blank" href="https://www.instagram.com/edenmen.underwear">
         <Instagram className="lg:w-10 lg:h-10 w-8 h-8 opacity-95" strokeWidth={1.7} />
       </Link>
