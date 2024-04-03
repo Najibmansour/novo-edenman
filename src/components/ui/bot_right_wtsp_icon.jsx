@@ -7,7 +7,7 @@ const BttomRightWhatsapp = (props) => {
      <Link href="https://wa.me/+96171266137">
      <svg
     fill="#17395C"
-    className='w-9 h-9 lg:w-14 lg:h-14'
+    className='w-9 h-9 lg:w-12 lg:h-12'
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
