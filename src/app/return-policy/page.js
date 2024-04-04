@@ -5,7 +5,7 @@ import React from 'react'
 const Refund = () => {
   return (
     <main className='py-20 lg:py-24 px-5 text-primary flex flex-col justify-center items-center'> 
-     <div className='flex flex-col gap-6 max-w-[75%]'>
+     <div className='flex flex-col gap-6 lg:max-w-[75%]'>
      <h2 className='text-2xl uppercase tracking-wider font-bold text-center'>Returns & Refunds</h2>
       <section >
         <p className='text-xs lg:text-sm italic px-1 text-gray-600'>
