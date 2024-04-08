@@ -31,6 +31,19 @@ const products = [
     images: images["DAD SON Boxer Brief"],
   },
   {
+    title: "Sport Boxers",
+    description:
+      "For comfort where it matters most, our collection of men's underwear and boxers feature discreet paneling, stay-put waistbands and ultra-soft fabrics to reduce uncomfortable bunching under your workout clothes, making them an essential pre-gym step. Just because you're on the move, doesn't mean your boxers should too. Designed to keep you comfortable and secure, our men’s gym underwear features materials that stretch, breathe and support, so you can focus without distraction whether that’s in the gym, work or home. You may work hard, but our boxers work harder.",
+    fabric: [
+      { name: "Cotton", percent: "95" },
+      { name: "Elastane", percent: "5" },
+    ],
+    wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+    variants: [],
+    type: "primary",
+    images: images["Sports boxers"],
+  },
+  {
     title: "Soft Hand Cotton Briefs",
     description:
       "Your elegant high-end Brief made of the softest natural Cotton with built-in recovery for fully comfort and 24/7 wear with a comfy elastic waistband, 2-ply pouch and clean seam lines for an ideal fit.",

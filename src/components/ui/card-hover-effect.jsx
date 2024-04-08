@@ -44,7 +44,7 @@ export const HoverEffect = ({ items, className }) => {
               <CardTitle>{item.title}</CardTitle>
               <div className="relative mt-2 h-[50%] w-[100%] rounded-2xl bg-gray-400 bg-opacity-30">
                 <Image
-                className="rounded-2xl"
+                  className="rounded-2xl"
                   src={item.image}
                   alt={item.title}
                   fill
@@ -64,7 +64,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl  border border-transparent bg-gray-200 p-4 group-hover:border-slate-300 dark:border-white/[0.2]",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl border  border-transparent bg-gray-200 p-4 shadow-lg group-hover:border-slate-300 dark:border-white/[0.2]",
         className,
       )}
     >
