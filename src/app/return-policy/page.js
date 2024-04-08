@@ -6,7 +6,7 @@ const Refund = () => {
   return (
     <main className='py-20 lg:py-24 px-5 text-primary flex flex-col justify-center items-center'> 
      <div className='flex flex-col gap-6 lg:max-w-[75%]'>
-     <h2 className='text-2xl uppercase tracking-wider font-bold text-center'>Returns & Refunds</h2>
+     <h2 className='text-2xl lg:text-5xl uppercase tracking-wider font-bold text-center'>Returns & Refunds</h2>
       <section >
         <p className='text-xs lg:text-sm italic px-1 text-gray-600'>
           Edenmen is glad to accept returns of online-purchased products that are undamaged, unworn, and/or defective <span className='font-semibold'>* within 30 days *</span> of the original purchase date.
@@ -32,7 +32,7 @@ const Refund = () => {
           <li>We will process your return within 5 business days after we receive your parcel.</li>
         </ol>
       </section>
-      <section className='p-3 rounded-xl bg-gray-400 italic '> 
+      <section className='p-3 lg:p-5 rounded-xl bg-gray-600 text-gray-200 italic '> 
         <h3 className='lg:text-lg'>Note:</h3>
         <ul className='text-xs lg:text-sm list-disc ml-3'>
           <li>Please contact us if you want to return an item. Return without prior discussion and authorization will not be accepted.</li>
