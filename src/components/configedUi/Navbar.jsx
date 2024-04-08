@@ -16,8 +16,8 @@ const Navbar = () => {
       href: "#",
       text: "DESIGN" },
     { 
-      href: "#",
-      text: "BLOG" },
+      href: "/return-policy",
+      text: "POLICY" },
     { 
       href: "#contact",
       text: "CONTACT" },
