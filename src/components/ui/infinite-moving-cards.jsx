@@ -68,8 +68,8 @@ export const InfiniteMovingCards = ({
         className,
       )}
     >
-      <div className="absolute bg-gradient-to-r from-white to-transparent w-full h-full z-40 from-0% to-15% lg:from-10% lg:to-25% pointer-events-none"/>
-      <div className="absolute bg-gradient-to-l from-white to-transparent w-full h-full z-40 from-0% to-15% lg:from-10% lg:to-25% pointer-events-none"/>
+      <div className="pointer-events-none absolute z-40 h-full w-full bg-gradient-to-r from-white from-0% to-transparent to-15% lg:from-10% lg:to-25%" />
+      <div className="pointer-events-none absolute z-40 h-full w-full bg-gradient-to-l from-white from-0% to-transparent to-15% lg:from-10% lg:to-25%" />
       <ul
         ref={scrollerRef}
         className={cn(
