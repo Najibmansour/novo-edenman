@@ -29,15 +29,17 @@ const qnas = [
 const QnA = () => {
   return (
     <section className="flex w-screen flex-col items-center text-primary">
-      <h2 className="mb-5 w-[75%] text-6xl font-bold tracking-wider">Q&A:</h2>
-      <Accordion type="single" collapsible className=" w-[75%]">
+      <h2 className=" mb-5 w-[75%] text-center text-4xl font-bold tracking-wider lg:text-6xl">
+        Q&A:
+      </h2>
+      <Accordion type="single" collapsible className=" w-[80%] lg:w-[75%]">
         {qnas.map(({ q, a }, i) => (
           <AccordionItem
             value={`item-${i}`}
-            className="mb-3 rounded-2xl bg-gray-100 px-6 py-2 shadow-md"
+            className="mb-3 rounded-3xl bg-gray-100 px-6 py-2 shadow-md"
             key={i}
           >
-            <AccordionTrigger className="text-left text-xl font-semibold tracking-wide contrast-[1.1] grayscale-[0.2] ">
+            <AccordionTrigger className="text-left font-semibold tracking-wide contrast-[1.1] grayscale-[0.2] lg:text-xl ">
               {q}
             </AccordionTrigger>
             <AccordionContent className="px-2 text-lg italic focus:px-6">

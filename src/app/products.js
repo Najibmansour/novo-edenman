@@ -56,7 +56,6 @@ const products = [
     type: "primary",
     images: images["Briefs"],
   },
-
   {
     title: "Cottony Men Relax Boxer Briefs",
     description:
