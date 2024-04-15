@@ -3,6 +3,7 @@ import Flanel from "../svgs/flanel";
 import Boxer from "../svgs/boxer";
 import BlobsContainer from "../Blobs/BlobsContainer";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const Hero = (props) => {
   return (
@@ -24,9 +25,12 @@ const Hero = (props) => {
                   comfort, design,...
                 </p>
                 <div className="flex justify-center lg:justify-start lg:pl-5 ">
-                  <button className="custom-button-anim rounded-full bg-white px-6 py-2 text-xs font-extrabold text-gray-600 text-opacity-65  lg:mt-5 lg:px-10 lg:py-3 lg:text-lg ">
+                  <Link
+                    href="https://novo-concepts.com/"
+                    className="custom-button-anim rounded-full bg-white px-6 py-2 text-xs font-extrabold text-gray-600 text-opacity-65  lg:mt-5 lg:px-10 lg:py-3 lg:text-lg "
+                  >
                     SPLASH
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
