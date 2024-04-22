@@ -17,19 +17,19 @@ const images = importAll(require.context("../images/products", true));
 // console.table(images[""]);
 
 const products = [
-  {
-    title: "Dad And Son",
-    description:
-      "For small boys, their fathers are their first superheroes and they aspire to act and appear like them. Developing an idea that allows your son to share his role model appearances with you during the day helps deepen the relationship between father and son without getting in the way of clothing regulations at work or school.",
-    fabric: [
-      { name: "Cotton", percent: "95" },
-      { name: "Elastane", percent: "5" },
-    ],
-    wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: [],
-    type: "primary",
-    images: images["DAD SON Boxer Brief"],
-  },
+  // {
+  //   title: "Dad And Son",
+  //   description:
+  //     "For small boys, their fathers are their first superheroes and they aspire to act and appear like them. Developing an idea that allows your son to share his role model appearances with you during the day helps deepen the relationship between father and son without getting in the way of clothing regulations at work or school.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: [],
+  //   type: "primary",
+  //   images: images["DAD SON Boxer Brief"],
+  // },
   {
     title: "Sport Boxers",
     description:
