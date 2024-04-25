@@ -7,15 +7,15 @@ import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
   const data = await req.json();
-  const { from_name, from_email, message } = data;
+  const { from_name, from_phone, message } = data;
 
   try {
     const mail = await tpt.sendMail({
-      from: from_email,
+      from: from_phone,
       to: process.env.NEXT_PUBLIC_NODEMAILER_MAIL,
-      replyTo: from_email,
-      subject: `Edenmen FeedBack from Website ${from_email}`,
-      html: compileFeedbackTemplate(from_name, from_email, message),
+      replyTo: from_phone,
+      subject: `Edenmen FeedBack from Website ${from_phone}`,
+      html: compileFeedbackTemplate(from_name, from_phone, message),
     });
 
     return NextResponse.json({ message: "Success: email was sent" });

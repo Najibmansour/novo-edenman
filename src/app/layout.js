@@ -8,16 +8,37 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Edenmen",
-  description: "Edenmen made a name for itself in the fiercely competitive world of men's underwear by letting its products speak for themselves.",
-  keywords: ["Tank", "Undershirt", "Crew neck", "V neck", "Boy short", "Underpants", "Undergarment", "Underclothing", "Long underwear", "Boxer", "Boxer with button", "Boxer short", "Trunk", "Slip", "Hip Short", "Brief", "Brief boxer", "Midway Brief"],
+  description:
+    "Edenmen made a name for itself in the fiercely competitive world of men's underwear by letting its products speak for themselves.",
+  keywords: [
+    "Tank",
+    "Undershirt",
+    "Crew neck",
+    "V neck",
+    "Boy short",
+    "Underpants",
+    "Undergarment",
+    "Underclothing",
+    "Long underwear",
+    "Boxer",
+    "Boxer with button",
+    "Boxer short",
+    "Trunk",
+    "Slip",
+    "Hip Short",
+    "Brief",
+    "Brief boxer",
+    "Midway Brief",
+  ],
   authors: [
     { name: "NOVO CONCEPT" },
     { name: "Najib Mansour", url: "https://github.com/Najibmansour" },
   ],
   openGraph: {
     title: "Edenmen",
-    description: "Edenmen made a name for itself in the fiercely competitive world of men's underwear by letting its products speak for themselves.",
-   url: "https://www.edenmenunderwear.com/",
+    description:
+      "Edenmen made a name for itself in the fiercely competitive world of men's underwear by letting its products speak for themselves.",
+    url: "https://www.edenmenunderwear.com/",
     siteName: "Edenmen Underwear",
     images: [
       {
@@ -44,7 +65,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className + "relative"}>
-        <Toaster position="top-center" richColors />
+        <Toaster
+          position="top-center"
+          richColors
+          toastOptions={{
+            unstyled: true,
+            classNames: {
+              error: "",
+              success: "",
+              warning: "",
+              info: "",
+            },
+          }}
+        />
         <Navbar />
         <BttomRightWhatsapp />
 
