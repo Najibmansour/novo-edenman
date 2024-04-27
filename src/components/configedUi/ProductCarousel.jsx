@@ -17,7 +17,7 @@ export default function ProductCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="h-full w-[90%] bg-green-300 "
+      className="h-full w-[90%] "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.play}
     >
