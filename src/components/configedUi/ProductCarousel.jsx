@@ -17,7 +17,7 @@ export default function ProductCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="h-[85svh] w-[90%] "
+      className="h-full w-[90%] bg-green-300 "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.play}
     >
@@ -27,7 +27,7 @@ export default function ProductCarousel() {
             { title, description, fabric, wash, variants, type, images },
             index,
           ) => (
-            <CarouselItem key={index} className="w-[100%] h-min">
+            <CarouselItem key={index} className="flex h-min w-[100%]">
               <ProductBox
                 type={type}
                 title={title}

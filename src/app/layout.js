@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
           position="top-center"
           richColors
           toastOptions={{
-            unstyled: true,
+            unstyled: false,
             classNames: {
               error: "",
               success: "",

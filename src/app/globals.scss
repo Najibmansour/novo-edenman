@@ -96,60 +96,59 @@ body {
 
 @keyframes blob1 {
   0% {
-    transform: translate($randStarty2 + px, $randStartx1 + px)
-      }
+    transform: translate($randStarty2 + px, $randStartx1 + px);
+  }
   33% {
-    transform: translate($randStartx2 + px, $randStarty3 + px)
-      }
+    transform: translate($randStartx2 + px, $randStarty3 + px);
+  }
   66% {
-    transform: translate($randStarty4 + px, $randStartx2 + px)
-      }
+    transform: translate($randStarty4 + px, $randStartx2 + px);
+  }
   100% {
-    transform: translate($randStarty2 + px, $randStartx1 + px)
-      }
+    transform: translate($randStarty2 + px, $randStartx1 + px);
+  }
 }
 @keyframes blob2 {
   0% {
-    transform: translate($randStarty1 + px, $randStartx2 + px)
-      }
+    transform: translate($randStarty1 + px, $randStartx2 + px);
+  }
   33% {
-    transform: translate($randStartx2 + px, $randStartx4 + px)
-      }
+    transform: translate($randStartx2 + px, $randStartx4 + px);
+  }
   66% {
-    transform: translate($randStartx3 + px, $randStartx2 + px)
-      }
+    transform: translate($randStartx3 + px, $randStartx2 + px);
+  }
   100% {
-    transform: translate($randStarty1 + px, $randStartx2 + px)
-      }
+    transform: translate($randStarty1 + px, $randStartx2 + px);
+  }
 }
 @keyframes blob3 {
   0% {
-    transform: translate($randStarty4 + px, $randStartx3 + px)
-      }
+    transform: translate($randStarty4 + px, $randStartx3 + px);
+  }
   33% {
-    transform: translate($randStartx2 + px, $randStartx4 + px)
-      }
+    transform: translate($randStartx2 + px, $randStartx4 + px);
+  }
   66% {
-    transform: translate($randStartx3 + px, $randStartx2 + px)
-      
+    transform: translate($randStartx3 + px, $randStartx2 + px);
   }
   100% {
-    transform: translate($randStarty4 + px, $randStartx3 + px)
-      }
+    transform: translate($randStarty4 + px, $randStartx3 + px);
+  }
 }
 @keyframes blob4 {
   0% {
-    transform: translate($randStarty1 + px, $randStartx2 + px)
-      }
+    transform: translate($randStarty1 + px, $randStartx2 + px);
+  }
   33% {
-    transform: translate($randStartx2 + px, $randStartx4 + px)
-      }
+    transform: translate($randStartx2 + px, $randStartx4 + px);
+  }
   66% {
-    transform: translate($randStartx3 + px, $randStartx2 + px)
-      }
+    transform: translate($randStartx3 + px, $randStartx2 + px);
+  }
   100% {
-    transform: translate($randStarty1 + px, $randStartx2 + px)
-      }
+    transform: translate($randStarty1 + px, $randStartx2 + px);
+  }
 }
 
 .shape1 {
@@ -168,7 +167,7 @@ body {
 
 @layer components {
   .custom-button-anim {
-    @apply transition-all hover:scale-105 hover:bg-opacity-100 active:scale-90;
+    @apply transition-all hover:scale-105 hover:bg-opacity-100 hover:text-blue-900 active:scale-90;
   }
 }
 

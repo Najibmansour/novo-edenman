@@ -34,9 +34,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed z-40 w-full border-b-[1px] border-gray-100 border-opacity-50">
-      <div className=" flex flex-row items-center justify-evenly bg-white bg-opacity-70 pb-[3svh] pt-[4svh] filter backdrop-blur-md lg:justify-center">
+      <div className=" flex flex-row items-center justify-evenly bg-white bg-opacity-70 pb-[2.5svh] pt-[4svh] filter backdrop-blur-md lg:justify-center lg:pb-[2svh] lg:pt-[2svh]">
         <Link href="/">
-          <Logo className="w-7 lg:w-10" />
+          <Logo className="w-7 lg:w-10" color="#15375A" />
         </Link>
         <div className="menu menu-horizontal hidden w-[70%] list-none justify-evenly lg:inline-flex">
           {navItems.map((item) => (
