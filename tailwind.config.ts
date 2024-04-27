@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
-const colors = require("tailwindcss/colors")
+
+const colors = require("tailwindcss/colors");
 
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
- 
 
 module.exports = {
   darkMode: ["class"],
@@ -27,6 +26,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        bebas: ["Bebas Neue", "sans-serif"], // after you font, add some fonts separated by commas to handle fallback.
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

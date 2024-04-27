@@ -11,31 +11,41 @@ const HeroTest = (props) => {
   return (
     <div className={cn("relative flex  items-center justify-center ", props)}>
       <div className="absolute z-20 flex justify-center ">
-        <div className="grid grid-cols-1 grid-rows-1 lg:ml-[7%] lg:w-[90%] lg:grid-cols-2 lg:grid-rows-1  ">
+        <div className="  grid grid-cols-1 grid-rows-1 lg:ml-[7%] lg:w-[90%] lg:grid-cols-2 lg:grid-rows-1  ">
           <div className=" row-span-2  flex items-center justify-center  lg:row-span-3 ">
-            <div className="w-[85%] text-white lg:w-full ">
+            <div className="w-[85%] py-4 text-white lg:w-full ">
               <div>
                 <div className="flex flex-col ">
                   <h2 className=" text-center text-3xl lg:text-left lg:text-7xl">
-                    <TextLogo className=" lg:w-[100%]" />
+                    <TextLogo className="lg:w-[100%] " />
                   </h2>
+                  <h4 className="text-sm font-bold  lg:text-xl ">
+                    Move in Comfort
+                  </h4>
                 </div>
                 <div>
                   <Logo
-                    className="scale-[75%] text-white lg:hidden"
-                    color="#f5f5f555"
+                    className="w-[90%] scale-[70%] text-white lg:hidden"
+                    color="#f5f5f588"
                   />
                 </div>
-                <p className="text-md my-2 text-center tracking-wide lg:mt-5 lg:text-left lg:text-lg">
-                  Elevate your experience with luxury and comfort by trying
-                  “Edenmen” sports underwear. meticulously crafted in Lebanon
-                  from pure cotton, to make you “Move in comfort”. what are you
-                  waiting for? Contact us now!
+                <p className="text-md my-2 text-center  text-gray-100 lg:mt-5 lg:text-left lg:text-lg">
+                  Elevate your experience with{" "}
+                  <b className="text-gray-50">luxury</b> and{" "}
+                  <b className="text-gray-50">comfort</b> by trying{" "}
+                  <b className="text-gray-50"> Edenmen</b> sports underwear.
+                  Meticulously crafted in{" "}
+                  <b className="text-gray-50">Lebanon</b> from pure cotton, to
+                  make you <b className="text-gray-50">“Move in comfort”</b>.
+                  what are you waiting for?{" "}
+                  <Link href="/#contact" className="underline">
+                    Contact us now!
+                  </Link>
                 </p>
                 <div className="flex justify-center lg:justify-start lg:pl-5 ">
                   <Link
                     href="https://novo-concepts.com/"
-                    className="custom-button-anim rounded-full bg-white px-10 py-3 text-sm font-extrabold text-gray-600 text-opacity-65  lg:mt-5 lg:px-10 lg:py-3 lg:text-lg "
+                    className="custom-button-anim rounded-full bg-white px-10 py-3 text-sm font-extrabold text-amber-900  lg:mt-5 lg:px-10 lg:py-3 lg:text-lg lg:text-blue-950 "
                   >
                     SPLASH
                   </Link>
@@ -44,7 +54,7 @@ const HeroTest = (props) => {
             </div>
           </div>
           <div className="hidden lg:block">
-            <Logo className="w-full scale-[65%]" color="#F5F5F566"></Logo>
+            <Logo className="w-full scale-[65%]" color="#F5F5F5cd"></Logo>
           </div>
         </div>
       </div>
