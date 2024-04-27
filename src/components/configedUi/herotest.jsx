@@ -11,13 +11,13 @@ const HeroTest = (props) => {
   return (
     <div className={cn("relative flex  items-center justify-center ", props)}>
       <div className="absolute z-20 flex justify-center ">
-        <div className="grid  grid-cols-1 grid-rows-1 lg:w-[75%] lg:grid-cols-2 lg:grid-rows-3 ">
-          <div className="order-2 row-span-2  flex items-center justify-center lg:order-1 lg:row-span-3 ">
+        <div className="grid grid-cols-1 grid-rows-1 lg:ml-[7%] lg:w-[90%] lg:grid-cols-2 lg:grid-rows-1  ">
+          <div className=" row-span-2  flex items-center justify-center  lg:row-span-3 ">
             <div className="w-[85%] text-white lg:w-full ">
               <div>
                 <div className="flex flex-col ">
                   <h2 className=" text-center text-3xl lg:text-left lg:text-7xl">
-                    <TextLogo className=" lg:w-[115%]" />
+                    <TextLogo className=" lg:w-[100%]" />
                   </h2>
                 </div>
                 <div>
@@ -43,12 +43,8 @@ const HeroTest = (props) => {
               </div>
             </div>
           </div>
-
-          <div className="order-1 row-span-2 hidden  items-end justify-center pb-5 lg:order-2 lg:row-span-2 lg:flex lg:justify-end">
-            <Flanel className="w-[75%] lg:w-[45%]" />
-          </div>
-          <div className="order-3 row-span-1 hidden  items-start justify-center pt-5 lg:order-3 lg:row-span-1 lg:flex lg:items-start lg:justify-end">
-            <Boxer className=" w-[75%] lg:w-[45%]" />
+          <div className="hidden lg:block">
+            <Logo className="w-full scale-[65%]" color="#F5F5F566"></Logo>
           </div>
         </div>
       </div>
@@ -58,3 +54,12 @@ const HeroTest = (props) => {
 };
 
 export default HeroTest;
+
+{
+  /* <div className="order-1 row-span-2 hidden  items-end justify-center pb-5 lg:order-2 lg:row-span-2 lg:flex lg:justify-end">
+<Flanel className="w-[75%] lg:w-[45%]" />
+</div>
+<div className="order-3 row-span-1 hidden  items-start justify-center pt-5 lg:order-3 lg:row-span-1 lg:flex lg:items-start lg:justify-end">
+<Boxer className=" w-[75%] lg:w-[45%]" />
+</div> */
+}
