@@ -44,7 +44,7 @@ const products = [
     images: images["Sports boxers"],
   },
   {
-    title: "Soft Hand Cotton Briefs",
+    title: "Soft Cotton Briefs",
     description:
       "Your elegant high-end Brief made of the softest natural Cotton with built-in recovery for fully comfort and 24/7 wear with a comfy elastic waistband, 2-ply pouch and clean seam lines for an ideal fit.",
     fabric: [
