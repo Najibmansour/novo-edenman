@@ -30,7 +30,7 @@ const ProductBox = ({
   // console.log(images);
 
   return (
-    <section className="flex w-[100%] items-center justify-center lg:h-screen lg:items-start lg:pt-14">
+    <section className="flex w-[100%] items-center justify-center  lg:items-start lg:py-20">
       <div className="flex w-[90%] flex-col items-start  gap-3 lg:w-[70%] lg:flex-row lg:items-start ">
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>

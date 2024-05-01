@@ -33,7 +33,7 @@ const products = [
   {
     title: "Sport Boxers",
     description:
-      "For comfort where it matters most, our collection of men's underwear and boxers feature discreet paneling, stay-put waistbands and ultra-soft fabrics to reduce uncomfortable bunching under your workout clothes, making them an essential pre-gym step. Just because you're on the move, doesn't mean your boxers should too. Designed to keep you comfortable and secure, our men’s gym underwear features materials that stretch, breathe and support, so you can focus without distraction whether that’s in the gym, work or home. You may work hard, but our boxers work harder.",
+      "Your best choice of boxers with feature discreet paneling, stay-put waistbands and ultra-soft fabrics that brings you comfort, our undeniably lightweight cotton gives you the relaxation feeling while working out or in your daily activities.",
     fabric: [
       { name: "Cotton", percent: "95" },
       { name: "Elastane", percent: "5" },
@@ -56,19 +56,19 @@ const products = [
     type: "primary",
     images: images["Briefs"],
   },
-  {
-    title: "Cottony Men Relax Boxer Briefs",
-    description:
-      "Your daily essentiels Boxer Brief with the smooth elastic waistband, made with our undeniably soft and lightweight cotton that gives you a body-hugging fit that allows you to breathe. Detailed with a 2-ply pouch for the support you crave and seam details for a superb fit.",
-    fabric: [
-      { name: "Cotton", percent: "95" },
-      { name: "Elastane", percent: "5" },
-    ],
-    wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: ["High Waist", "Low Waist"],
-    type: "secondary",
-    images: images["Boxer Brief"],
-  },
+  // {
+  //   title: "Cottony Men Relax Boxer Briefs",
+  //   description:
+  //     "Your daily essentiels Boxer Brief with the smooth elastic waistband, made with our undeniably soft and lightweight cotton that gives you a body-hugging fit that allows you to breathe. Detailed with a 2-ply pouch for the support you crave and seam details for a superb fit.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: ["High Waist", "Low Waist"],
+  //   type: "primary",
+  //   images: images["Boxer Brief"],
+  // },
   {
     title: "Smooth Cotton Trunk",
     description:
@@ -92,11 +92,11 @@ const products = [
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [],
-    type: "secondary",
+    type: "primary",
     images: images["Boxers"],
   },
   {
-    title: "Ultra Stretch Undershirt V neck",
+    title: "Cottony undershirt v neck",
     description:
       "Your basic top quality half sleeve undershirt V neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     fabric: [{ name: "Cotton", percent: "100" }],
@@ -106,13 +106,13 @@ const products = [
     images: images["Vneck"],
   },
   {
-    title: "Ultra Stretch Undershirt O neck",
+    title: "Cottony undershirt O neck",
     description:
       "Your basic top quality sleeveless undershirt O neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
     variants: [],
-    type: "secondary",
+    type: "primary",
     images: images["Oneck"],
   },
   {

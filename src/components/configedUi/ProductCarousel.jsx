@@ -12,12 +12,12 @@ import ProductBox from "../Pages/ProductBox";
 import { products } from "@/app/products";
 
 export default function ProductCarousel() {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
 
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="h-full w-[90%] "
+      className="h-full w-[90%]  lg:h-min "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.play}
     >

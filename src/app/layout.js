@@ -11,6 +11,12 @@ export const metadata = {
   description:
     "Edenmen made a name for itself in the fiercely competitive world of men's underwear by letting its products speak for themselves.",
   keywords: [
+    "edenmen",
+    "lebanon",
+    "micro-modal",
+    "100% cotton boxer",
+    "sport boxer",
+    "cotton",
     "Tank",
     "Undershirt",
     "Crew neck",

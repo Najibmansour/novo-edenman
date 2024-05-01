@@ -32,11 +32,15 @@ const QnA = () => {
       <h2 className=" mb-5 w-[75%] text-center text-4xl font-bold tracking-wider lg:text-6xl">
         Q&A:
       </h2>
-      <Accordion type="single" collapsible className=" w-[80%] lg:w-[75%]">
+      <Accordion
+        type="single"
+        collapsible
+        className=" w-[80%] space-y-5 lg:w-[75%]"
+      >
         {qnas.map(({ q, a }, i) => (
           <AccordionItem
             value={`item-${i}`}
-            className="mb-3 rounded-3xl bg-gray-100 px-6 py-2 shadow-md"
+            className=" rounded-3xl bg-gray-50 px-6 py-2 shadow-xl"
             key={i}
           >
             <AccordionTrigger className="text-left font-semibold tracking-wide contrast-[1.1] grayscale-[0.2] lg:text-xl ">
