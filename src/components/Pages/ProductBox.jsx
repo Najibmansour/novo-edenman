@@ -48,7 +48,7 @@ const ProductBox = ({
           {images ? (
             <div className="relative h-[80vw] w-[80vw] lg:h-[30vw] lg:w-[30vw]">
               <Image
-                className="  rounded-3xl bg-gray-500 bg-opacity-30 "
+                className="  aspect-square rounded-3xl bg-gray-500 bg-opacity-30"
                 fill
                 sizes="500px"
                 // objectFit="contain"
