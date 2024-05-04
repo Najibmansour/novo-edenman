@@ -52,7 +52,7 @@ const ProductBox = ({
                 fill
                 sizes="500px"
                 // objectFit="contain"
-                src={images[1]}
+                src={images[0]}
                 alt="test"
               />
             </div>
