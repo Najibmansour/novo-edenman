@@ -42,7 +42,7 @@ export const HoverEffect = ({ items, className }) => {
           <Card>
             <div className="flex h-[60vh] flex-col">
               <CardTitle>{item.title}</CardTitle>
-              <div className="relative mt-2 aspect-[7/5]   rounded-2xl bg-gray-400 bg-opacity-30">
+              <div className="relative mt-2 aspect-[1/1]   rounded-2xl bg-gray-400 bg-opacity-30">
                 <Image
                   className="rounded-2xl"
                   src={item.image}
