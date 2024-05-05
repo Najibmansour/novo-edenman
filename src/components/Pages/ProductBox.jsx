@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
+import ProductColorComponent from "../configedUi/colorComponent";
 
 const ProductBox = ({
   type,
@@ -16,12 +17,12 @@ const ProductBox = ({
   let badgeColor = "";
 
   if (type === "primary") {
-    titleColor = "text-4xl font-semibold text-primary lg:text-7xl";
+    titleColor = "text-4xl font-semibold text-primary lg:text-5xl";
     buttonColor =
       "mt-4 rounded-full bg-primary px-6 py-3 font-bold tracking-widest text-gray-100";
     badgeColor = "bg-primary";
   } else {
-    titleColor = "text-4xl font-semibold text-secondary lg:text-7xl";
+    titleColor = "text-4xl font-semibold text-secondary lg:text-5xl";
     buttonColor =
       "mt-4 rounded-full bg-secondary px-6 py-3 font-bold tracking-widest text-gray-100";
     badgeColor = "bg-secondary";
@@ -35,6 +36,17 @@ const ProductBox = ({
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>
           <div className="mt-4 text-sm lg:text-lg">{description}</div>
+          <div className="flex flex-row-reverse justify-end gap-2 lg:my-2">
+            {images?.map((img, index) => (
+              <Image
+                key={index}
+                className="aspect-square h-16 w-16 rounded-2xl bg-gray-500 bg-opacity-30 shadow-xl lg:h-24 lg:w-24"
+                // objectFit="contain"
+                src={img}
+                alt={`img-${index}`}
+              />
+            ))}
+          </div>
           <button
             className={clsx(
               `hover hidden text-lg antialiased lg:block`,
@@ -46,15 +58,8 @@ const ProductBox = ({
         </div>
         <div className="">
           {images ? (
-            <div className="relative h-[80vw] w-[80vw]  lg:h-[30vw] lg:w-[30vw]">
-              <Image
-                className=" aspect-square rounded-2xl bg-gray-500 bg-opacity-30 shadow-xl"
-                fill
-                sizes="500px"
-                // objectFit="contain"
-                src={images[0]}
-                alt="test"
-              />
+            <div className="relative  h-[80vw]  w-[80vw] lg:h-[30vw] lg:w-[30vw]">
+              <ProductColorComponent images={images} variants={variants} />
             </div>
           ) : (
             <div className=" h-[80vw] w-[80vw] rounded-3xl bg-gray-500 bg-opacity-30 lg:h-[30vw] lg:w-[30vw]" />

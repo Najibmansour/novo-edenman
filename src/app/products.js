@@ -11,10 +11,17 @@ function importAll(r) {
   });
   return images;
 }
-
 const images = importAll(require.context("../images/products", true));
 
 // console.table(images[""]);
+
+// COLORS
+import COLOR_custom from "../images/colors/custom.jpg";
+import COLOR_black from "../images/colors/black.jpg";
+import COLOR_dark_gray from "../images/colors/dark_gray.jpg";
+import COLOR_gray from "../images/colors/gray.jpg";
+import COLOR_white from "../images/colors/white.jpg";
+import COLOR_navy from "../images/colors/navy.jpg";
 
 const products = [
   // {
@@ -39,7 +46,14 @@ const products = [
       { name: "Elastane", percent: "5" },
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: [],
+    variants: [
+      { color: COLOR_custom, title: "Custom" },
+      { color: COLOR_black, title: "Black" },
+      { color: COLOR_dark_gray, title: "Dark Gray" },
+      { color: COLOR_gray, title: "Gray" },
+      { color: COLOR_navy, title: "Navy Blue" },
+      { color: COLOR_white, title: "White" },
+    ],
     type: "primary",
     images: images["Sports boxers"],
   },
@@ -52,7 +66,11 @@ const products = [
       { name: "Elastane", percent: "5" },
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: [],
+    variants: [
+      { color: COLOR_black, title: "Black" },
+      { color: COLOR_gray, title: "Gray" },
+      { color: COLOR_navy, title: "Navy Blue" },
+    ],
     type: "primary",
     images: images["Briefs"],
   },
@@ -91,7 +109,14 @@ const products = [
       { name: "Elastane", percent: "5" },
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: [],
+    variants: [
+      { color: COLOR_custom, title: "Custom" },
+      { color: COLOR_black, title: "Black" },
+      { color: COLOR_dark_gray, title: "Dark Gray" },
+      { color: COLOR_gray, title: "Gray" },
+      { color: COLOR_navy, title: "Navy Blue" },
+      { color: COLOR_white, title: "White" },
+    ],
     type: "primary",
     images: images["Boxers"],
   },
@@ -101,7 +126,12 @@ const products = [
       "Your basic top quality half sleeve undershirt V neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
-    variants: [],
+    variants: [
+      { color: COLOR_black, title: "Black" },
+      { color: COLOR_dark_gray, title: "Dark Gray" },
+      { color: COLOR_gray, title: "Gray" },
+      { color: COLOR_navy, title: "Navy Blue" },
+    ],
     type: "primary",
     images: images["Vneck"],
   },
@@ -111,7 +141,12 @@ const products = [
       "Your basic top quality sleeveless undershirt O neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
-    variants: [],
+    variants: [
+      { color: COLOR_black, title: "Black" },
+      { color: COLOR_dark_gray, title: "Dark Gray" },
+      { color: COLOR_gray, title: "Gray" },
+      { color: COLOR_navy, title: "Navy Blue" },
+    ],
     type: "primary",
     images: images["Oneck"],
   },
@@ -121,7 +156,8 @@ const products = [
       "Your elegant high-end Tank is made with our breathable high-stretch cotton rib fabric and designed for any and everyday to provide utmost flexibilty and comfort.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
-    variants: [],
+    variants: [COLOR_white],
+    variants: [{ color: COLOR_white, title: "White" }],
     type: "primary",
     images: images["Tank"],
   },
