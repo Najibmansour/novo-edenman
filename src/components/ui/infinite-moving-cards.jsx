@@ -88,7 +88,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <Image
-              className="rounded-3xl"
+              className="rounded-3xl shadow-lg"
               alt={`product-image-${idx}`}
               src={item}
               sizes="150px"

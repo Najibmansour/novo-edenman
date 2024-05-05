@@ -30,7 +30,7 @@ const ProductBox = ({
   // console.log(images);
 
   return (
-    <section className="flex w-[100%] items-center justify-center  lg:items-start lg:py-20">
+    <section className="flex w-[100%] items-center justify-center  lg:items-start lg:py-20 ">
       <div className="flex w-[90%] flex-col items-start  gap-3 lg:w-[70%] lg:flex-row lg:items-start ">
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>
@@ -46,9 +46,9 @@ const ProductBox = ({
         </div>
         <div className="">
           {images ? (
-            <div className="relative h-[80vw] w-[80vw] lg:h-[30vw] lg:w-[30vw]">
+            <div className="relative h-[80vw] w-[80vw]  lg:h-[30vw] lg:w-[30vw]">
               <Image
-                className="  aspect-square rounded-3xl bg-gray-500 bg-opacity-30"
+                className=" aspect-square rounded-2xl bg-gray-500 bg-opacity-30 shadow-xl"
                 fill
                 sizes="500px"
                 // objectFit="contain"

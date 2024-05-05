@@ -69,19 +69,19 @@ const products = [
   //   type: "primary",
   //   images: images["Boxer Brief"],
   // },
-  {
-    title: "Smooth Cotton Trunk",
-    description:
-      "Your everyday day favorite Trunk, made from super soft natural cotton fabric, with clean seam lines, that provide you with much elasticity, natural feelings and kind to your skin with the smooth elastic waistband.",
-    fabric: [
-      { name: "Cotton", percent: "95" },
-      { name: "Elastane", percent: "5" },
-    ],
-    wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-    variants: ["High Waist", "Low Waist"],
-    type: "primary",
-    images: images["DAD SON Trunk"],
-  },
+  // {
+  //   title: "Smooth Cotton Trunk",
+  //   description:
+  //     "Your everyday day favorite Trunk, made from super soft natural cotton fabric, with clean seam lines, that provide you with much elasticity, natural feelings and kind to your skin with the smooth elastic waistband.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: ["High Waist", "Low Waist"],
+  //   type: "primary",
+  //   images: images["DAD SON Trunk"],
+  // },
   {
     title: "Super Soft Boxers",
     description:
