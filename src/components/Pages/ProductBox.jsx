@@ -36,7 +36,7 @@ const ProductBox = ({
         <div className="w-[85%] ">
           <div className={titleColor}>{title}</div>
           <div className="mt-4 text-sm lg:text-lg">{description}</div>
-          <div className="flex flex-row-reverse justify-end gap-2 lg:my-2">
+          {/* <div className="flex flex-row-reverse justify-end gap-2 lg:my-2">
             {images?.map((img, index) => (
               <Image
                 key={index}
@@ -46,7 +46,7 @@ const ProductBox = ({
                 alt={`img-${index}`}
               />
             ))}
-          </div>
+          </div> */}
           <button
             className={clsx(
               `hover hidden text-lg antialiased lg:block`,
