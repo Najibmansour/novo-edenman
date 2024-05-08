@@ -23,11 +23,20 @@ const ProductColorComponent = ({ variants, images }) => {
           {variants.map(({ color, title }, index) => (
             <Tooltip key={index}>
               <TooltipTrigger>
-                <Image
-                  className="h-[32px] w-[32px] rounded-full border-4 border-neutral-100 lg:h-[56px] lg:w-[56px]"
-                  src={color}
-                  alt={`color-${index}`}
-                ></Image>
+                {typeof color === "string" ? (
+                  <div
+                    style={{ backgroundColor: `${color}` }}
+                    className="h-[32px] w-[32px] rounded-full border-4 border-neutral-100 lg:h-[56px] lg:w-[56px]"
+                    src={color}
+                    alt={`color-${index}`}
+                  ></div>
+                ) : (
+                  <Image
+                    className="h-[32px] w-[32px] rounded-full border-4 border-neutral-100 lg:h-[56px] lg:w-[56px]"
+                    src={color}
+                    alt={`color-${index}`}
+                  ></Image>
+                )}
               </TooltipTrigger>
               <TooltipContent>{title}</TooltipContent>
             </Tooltip>

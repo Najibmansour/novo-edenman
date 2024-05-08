@@ -17,15 +17,23 @@ const images = importAll(require.context("../images/products", true));
 
 // COLORS
 import COLOR_custom from "../images/colors/custom.jpg";
-import COLOR_black from "../images/colors/black.jpg";
-import COLOR_dark_gray from "../images/colors/dark_gray.jpg";
-import COLOR_gray from "../images/colors/gray.jpg";
-import COLOR_white from "../images/colors/white.jpg";
-import COLOR_navy from "../images/colors/navy.jpg";
 
 const products = [
+  // {
+  //   title: "Dad And Son",
+  //   description:
+  //     "For small boys, their fathers are their first superheroes and they aspire to act and appear like them. Developing an idea that allows your son to share his role model appearances with you during the day helps deepen the relationship between father and son without getting in the way of clothing regulations at work or school.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: [],
+  //   type: "primary",
+  //   images: images["DAD SON Boxer Brief"],
+  // },
   {
-    title: "Sport Brief Boxers",
+    title: "Sport Boxers",
     description:
       "Your best choice of boxers with feature discreet paneling, stay-put waistbands and ultra-soft fabrics that brings you comfort, our undeniably lightweight cotton gives you the relaxation feeling while working out or in your daily activities.",
     fabric: [
@@ -35,11 +43,11 @@ const products = [
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [
       { color: COLOR_custom, title: "Custom" },
-      { color: COLOR_black, title: "Black" },
-      { color: COLOR_dark_gray, title: "Dark Gray" },
-      { color: COLOR_gray, title: "Gray" },
-      { color: COLOR_navy, title: "Navy Blue" },
-      { color: COLOR_white, title: "White" },
+      { color: "#000000", title: "Black" },
+      { color: "#666666", title: "Dark Gray" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#0f0f60", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
     ],
     type: "primary",
     images: images["Sports boxers"],
@@ -54,15 +62,41 @@ const products = [
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [
-      { color: COLOR_black, title: "Black" },
-      { color: COLOR_white, title: "White" },
-      { color: COLOR_gray, title: "Gray" },
-      { color: COLOR_navy, title: "Navy Blue" },
+      { color: "#000000", title: "Black" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#fcfcfc", title: "White" },
+
+      { color: "#000080", title: "Navy Blue" },
     ],
     type: "primary",
     images: images["Briefs"],
   },
-
+  // {
+  //   title: "Cottony Men Relax Boxer Briefs",
+  //   description:
+  //     "Your daily essentiels Boxer Brief with the smooth elastic waistband, made with our undeniably soft and lightweight cotton that gives you a body-hugging fit that allows you to breathe. Detailed with a 2-ply pouch for the support you crave and seam details for a superb fit.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: ["High Waist", "Low Waist"],
+  //   type: "primary",
+  //   images: images["Boxer Brief"],
+  // },
+  // {
+  //   title: "Smooth Cotton Trunk",
+  //   description:
+  //     "Your everyday day favorite Trunk, made from super soft natural cotton fabric, with clean seam lines, that provide you with much elasticity, natural feelings and kind to your skin with the smooth elastic waistband.",
+  //   fabric: [
+  //     { name: "Cotton", percent: "95" },
+  //     { name: "Elastane", percent: "5" },
+  //   ],
+  //   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+  //   variants: ["High Waist", "Low Waist"],
+  //   type: "primary",
+  //   images: images["DAD SON Trunk"],
+  // },
   {
     title: "Super Soft Boxers",
     description:
@@ -74,11 +108,11 @@ const products = [
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [
       { color: COLOR_custom, title: "Custom" },
-      { color: COLOR_black, title: "Black" },
-      { color: COLOR_dark_gray, title: "Dark Gray" },
-      { color: COLOR_gray, title: "Gray" },
-      { color: COLOR_navy, title: "Navy Blue" },
-      { color: COLOR_white, title: "White" },
+      { color: "#000000", title: "Black" },
+      { color: "#666666", title: "Dark Gray" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#000080", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
     ],
     type: "primary",
     images: images["Boxers"],
@@ -90,10 +124,11 @@ const products = [
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
     variants: [
-      { color: COLOR_black, title: "Black" },
-      { color: COLOR_dark_gray, title: "Dark Gray" },
-      { color: COLOR_gray, title: "Gray" },
-      { color: COLOR_navy, title: "Navy Blue" },
+      { color: "#000000", title: "Black" },
+      { color: "#666666", title: "Dark Gray" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#000080", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
     ],
     type: "primary",
     images: images["Vneck"],
@@ -105,11 +140,11 @@ const products = [
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
     variants: [
-      { color: COLOR_black, title: "Black" },
-      { color: COLOR_white, title: "White" },
-      { color: COLOR_dark_gray, title: "Dark Gray" },
-      { color: COLOR_gray, title: "Gray" },
-      { color: COLOR_navy, title: "Navy Blue" },
+      { color: "#000000", title: "Black" },
+      { color: "#666666", title: "Dark Gray" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#000080", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
     ],
     type: "primary",
     images: images["Oneck"],
@@ -120,8 +155,8 @@ const products = [
       "Your elegant high-end Tank is made with our breathable high-stretch cotton rib fabric and designed for any and everyday to provide utmost flexibilty and comfort.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
-    variants: [COLOR_white],
-    variants: [{ color: COLOR_white, title: "White" }],
+    variants: ["#fcfcfc"],
+    variants: [{ color: "#fcfcfc", title: "White" }],
     type: "primary",
     images: images["Tank"],
   },
@@ -140,43 +175,3 @@ const getImages = (arr) => {
 const productsImages = getImages(products);
 
 export { products, productsImages };
-
-// {
-//   title: "Cottony Men Relax Boxer Briefs",
-//   description:
-//     "Your daily essentiels Boxer Brief with the smooth elastic waistband, made with our undeniably soft and lightweight cotton that gives you a body-hugging fit that allows you to breathe. Detailed with a 2-ply pouch for the support you crave and seam details for a superb fit.",
-//   fabric: [
-//     { name: "Cotton", percent: "95" },
-//     { name: "Elastane", percent: "5" },
-//   ],
-//   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-//   variants: ["High Waist", "Low Waist"],
-//   type: "primary",
-//   images: images["Boxer Brief"],
-// },
-// {
-//   title: "Smooth Cotton Trunk",
-//   description:
-//     "Your everyday day favorite Trunk, made from super soft natural cotton fabric, with clean seam lines, that provide you with much elasticity, natural feelings and kind to your skin with the smooth elastic waistband.",
-//   fabric: [
-//     { name: "Cotton", percent: "95" },
-//     { name: "Elastane", percent: "5" },
-//   ],
-//   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-//   variants: ["High Waist", "Low Waist"],
-//   type: "primary",
-//   images: images["DAD SON Trunk"],
-// },
-// {
-//   title: "Dad And Son",
-//   description:
-//     "For small boys, their fathers are their first superheroes and they aspire to act and appear like them. Developing an idea that allows your son to share his role model appearances with you during the day helps deepen the relationship between father and son without getting in the way of clothing regulations at work or school.",
-//   fabric: [
-//     { name: "Cotton", percent: "95" },
-//     { name: "Elastane", percent: "5" },
-//   ],
-//   wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
-//   variants: [],
-//   type: "primary",
-//   images: images["DAD SON Boxer Brief"],
-// },
