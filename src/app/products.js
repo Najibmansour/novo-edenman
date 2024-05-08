@@ -38,7 +38,7 @@ const products = [
   //   images: images["DAD SON Boxer Brief"],
   // },
   {
-    title: "Sport Boxers",
+    title: "Sport Brief Boxers",
     description:
       "Your best choice of boxers with feature discreet paneling, stay-put waistbands and ultra-soft fabrics that brings you comfort, our undeniably lightweight cotton gives you the relaxation feeling while working out or in your daily activities.",
     fabric: [
@@ -68,6 +68,7 @@ const products = [
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [
       { color: COLOR_black, title: "Black" },
+      { color: COLOR_white, title: "White" },
       { color: COLOR_gray, title: "Gray" },
       { color: COLOR_navy, title: "Navy Blue" },
     ],
@@ -143,6 +144,7 @@ const products = [
     wash: [],
     variants: [
       { color: COLOR_black, title: "Black" },
+      { color: COLOR_white, title: "White" },
       { color: COLOR_dark_gray, title: "Dark Gray" },
       { color: COLOR_gray, title: "Gray" },
       { color: COLOR_navy, title: "Navy Blue" },
