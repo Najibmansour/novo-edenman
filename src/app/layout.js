@@ -62,9 +62,9 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  // verification: {
-  //   google: "kBJm8wyrpm0r_gQLJ71zSqneHWbFjqmG2_th1DkF018",
-  // },
+  verification: {
+    google: "1jRpRhjcpV2V-EyD9y2LMwMln-Sll9EsCgBf9n0rn-Q",
+  },
 };
 
 export default function RootLayout({ children }) {
