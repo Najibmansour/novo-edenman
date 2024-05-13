@@ -62,9 +62,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  verification: {
-    google: "1jRpRhjcpV2V-EyD9y2LMwMln-Sll9EsCgBf9n0rn-Q",
-  },
+  "google-site-verification": "1jRpRhjcpV2V-EyD9y2LMwMln-Sll9EsCgBf9n0rn-Q",
 };
 
 export default function RootLayout({ children }) {
