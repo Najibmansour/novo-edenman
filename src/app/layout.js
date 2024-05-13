@@ -67,6 +67,24 @@ export const metadata = {
   },
 };
 
+export default function sitemap() {
+  return [
+    {
+      url: 'https://www.edenmenunderwear.com/',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
+    },
+    {
+      url: 'https://www.edenmenunderwear.com/return-policy',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
+  ]
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
