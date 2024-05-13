@@ -70,6 +70,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <header>
+        <meta
+          name="google-site-verification"
+          content="1jRpRhjcpV2V-EyD9y2LMwMln-Sll9EsCgBf9n0rn-Q"
+        />
+      </header>
       <body className={inter.className + "relative"}>
         <Toaster
           position="top-center"
