@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
   const navItems = [
     {
-      href: "#",
+      href: "#infinit-cards",
       text: "COLLECTION",
     },
     {

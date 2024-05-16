@@ -43,7 +43,7 @@ const QnA = () => {
             className=" rounded-3xl bg-gray-50 px-6 py-2 shadow-xl"
             key={i}
           >
-            <AccordionTrigger className="text-left font-semibold tracking-wide contrast-[1.1] grayscale-[0.2] lg:text-xl ">
+            <AccordionTrigger className="text-left font-semibold  tracking-wide contrast-[1.1] grayscale-[0.2] lg:text-2xl ">
               {q}
             </AccordionTrigger>
             <AccordionContent className="px-2 text-lg italic focus:px-6">

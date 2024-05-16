@@ -14,7 +14,12 @@ export function InfiniteMovingCardsDemo() {
   // console.log(getImages(products).length);
 
   return (
-    <div className="dark:bg-grid-white/[0.05] relative flex h-[30svh] flex-col  items-center justify-center overflow-hidden rounded-md antialiased dark:bg-black">
+    <div className="dark:bg-grid-white/[0.05] relative flex h-[30svh] flex-col items-center justify-center overflow-hidden rounded-md antialiased dark:bg-black">
+      <div
+        id="infinit-cards"
+        alt="redirecting-section-to-point-to-stay-centered"
+        className="absolute -top-80 z-50 size-24 bg-yellow-300"
+      />
       <InfiniteMovingCards
         items={productsImages}
         direction="right"
