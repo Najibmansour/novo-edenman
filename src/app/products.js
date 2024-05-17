@@ -57,21 +57,18 @@ const products = [
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
     variants: [
-      { color: CUSTOM_pattern01, title: "Pattern 1" },
-      { color: CUSTOM_pattern02, title: "Pattern 2" },
-      { color: CUSTOM_pattern03, title: "Pattern 3" },
-      { color: CUSTOM_pattern04, title: "Pattern 4" },
-      { color: CUSTOM_pattern05, title: "Pattern 5" },
-      { color: CUSTOM_pattern06, title: "Pattern 6" },
-      { color: CUSTOM_pattern07, title: "Pattern 7" },
-      { color: CUSTOM_pattern08, title: "Pattern 8" },
-      { color: CUSTOM_pattern09, title: "Pattern 9" },
+      { color: CUSTOM_pattern01, title: "Custom" },
+      { color: "#000000", title: "Black" },
+      { color: "#666666", title: "Dark Gray" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#000080", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
     ],
     type: "primary",
     images: images["Sports boxers"],
   },
   {
-    title: "Sport piqué Boxers",
+    title: "Sport Pique Boxers",
     description:
       "Y to feel the comfort, our Pique boxer is your best choice. This product is made of durable cotton covered with a tiny, textured pattern, and it’s easy to clean.",
     fabric: [
@@ -143,21 +140,41 @@ const products = [
       { name: "Elastane", percent: "5" },
     ],
     wash: ["Machine Wash Cold", "Tumble Dry Low", "Iron Low", "Do Not Bleach"],
+
     variants: [
-      { color: CUSTOM_pattern01, title: "Custom" },
-      { color: "#000000", title: "Black" },
-      { color: "#666666", title: "Dark Gray" },
-      { color: "#a0a0a0", title: "Gray" },
-      { color: "#000080", title: "Navy Blue" },
-      { color: "#fcfcfc", title: "White" },
+      { color: CUSTOM_pattern01, title: "Pattern 1" },
+      { color: CUSTOM_pattern02, title: "Pattern 2" },
+      { color: CUSTOM_pattern03, title: "Pattern 3" },
+      { color: CUSTOM_pattern04, title: "Pattern 4" },
+      { color: CUSTOM_pattern05, title: "Pattern 5" },
+      { color: CUSTOM_pattern06, title: "Pattern 6" },
+      { color: CUSTOM_pattern07, title: "Pattern 7" },
+      { color: CUSTOM_pattern08, title: "Pattern 8" },
+      { color: CUSTOM_pattern09, title: "Pattern 9" },
     ],
     type: "primary",
     images: images["Boxers"],
   },
   {
-    title: "Cottony undershirt v neck",
+    title: "Cottony undershirt V-neck",
     description:
       "Your basic top quality half sleeve undershirt V neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
+    fabric: [{ name: "Cotton", percent: "100" }],
+    wash: [],
+    variants: [
+      { color: COLOR_custom_black, title: "Black" },
+      { color: COLOR_custom_blue, title: "Blue" },
+      { color: COLOR_custom_gray, title: "Gray" },
+      { color: COLOR_custom_lightblue, title: "Light Blue" },
+      { color: COLOR_custom_white, title: "White" },
+    ],
+    type: "primary",
+    images: images["Vneck"],
+  },
+  {
+    title: "V-neck Pique undershirt ",
+    description:
+      "Our Pique Undershirt, crafted from premium fabric, and it blends luxurious softness with timeless style, enjoy the comfort and experience the difference.",
     fabric: [{ name: "Cotton", percent: "100" }],
     wash: [],
     variants: [
@@ -186,6 +203,7 @@ const products = [
     type: "primary",
     images: images["Oneck"],
   },
+
   {
     title: "Classic Fresh Tank",
     description:
