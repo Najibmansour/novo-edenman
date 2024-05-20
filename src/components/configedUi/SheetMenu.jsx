@@ -12,6 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import MenuButton from "./MenuButton";
+import Link from "next/link";
 
 export function SheetMenu({ navItems }) {
   return (
@@ -25,9 +26,12 @@ export function SheetMenu({ navItems }) {
         <div className="grid gap-10 py-4">
           {navItems.map((item) => (
             <li key={item}>
-              <a className="hover-underline-animation  text-xl  font-extrabold tracking-wider text-[#15375A]  after:bg-[#15375A]">
+              <Link
+                href={item.href}
+                className="hover-underline-animation  text-xl  font-extrabold tracking-wider text-[#15375A]  after:bg-[#15375A]"
+              >
                 {item.text}
-              </a>
+              </Link>
             </li>
           ))}
         </div>
