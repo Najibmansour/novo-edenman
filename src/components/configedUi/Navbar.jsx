@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
   const navItems = [
     {
-      href: "#infinit-cards",
+      href: "/#infinit-cards",
       text: "COLLECTION",
     },
     {
@@ -27,8 +27,8 @@ const Navbar = () => {
       text: "CONTACT",
     },
     {
-      href: "#",
-      text: "IDENTITY",
+      href: "/connections",
+      text: "CONNECTIONS",
     },
   ];
 
