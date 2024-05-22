@@ -12,7 +12,7 @@ const Connections = () => {
 
   return (
     <main className="flex w-full flex-col items-center pb-10 pt-20">
-      <section className="grid w-[80vw] gap-10 lg:grid-cols-6 lg:grid-rows-[16]">
+      <section className="grid w-[90vw] grid-cols-6 grid-rows-[16] gap-3 lg:w-[80vw] lg:gap-10">
         <div className="col-span-full row-span-4">
           <BlogImage
             src={images["exhibition07.jpeg"][0]}
@@ -21,10 +21,10 @@ const Connections = () => {
           />
         </div>
         <div className="col-span-full row-span-2 flex flex-col items-center justify-center   text-center tracking-wider text-primary">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-sm font-bold lg:text-3xl">
             Explore more about our experiences!
           </h1>
-          <h2 className=" text-2xl ">
+          <h2 className=" text-xs lg:text-2xl ">
             To <b>“move in comfort”</b> in our success, we participate in events
             and exhibitions, because we believe that communication and sharing
             ideas is the key professional growth.
@@ -32,10 +32,10 @@ const Connections = () => {
         </div>
         <BlogImage
           src={images["exhibition05.jpeg"][0]}
-          className="col-span-3 row-span-2"
+          className="col-span-full row-span-2 lg:col-span-3"
           alt="test"
         />
-        <h2 className="col-span-3 row-span-2 flex items-center justify-center p-10 text-2xl tracking-wider  text-primary">
+        <h2 className="col-span-full row-span-2 flex items-center justify-center p-5 text-xs tracking-wider text-primary lg:col-span-3 lg:p-10 lg:text-2xl">
           Our participation in &apos;Lebanese Industry Exhibition&apos; at
           “Forum de Beirut” from 9 till 13 May 2024. The exhibition was
           organized by “MediTrade” and “Wedding Mall” in coordination with the
@@ -54,17 +54,17 @@ const Connections = () => {
         />
         <BlogImage
           src={images["exhibition03.jpeg"][0]}
-          className="col-span-4 col-start-3 row-span-3 row-start-12"
+          className="col-span-4 col-start-3 row-span-3 lg:row-start-12"
           alt="test"
         />
         <BlogImage
           src={images["exhibition02.jpeg"][0]}
-          className="col-span-2 col-start-3 row-span-1 row-start-[15] "
+          className="col-span-2 col-start-3 row-span-1 lg:row-start-[15] "
           alt="test"
         />
         <BlogImage
           src={images["exhibition06.jpeg"][0]}
-          className="col-span-2 col-start-5 row-span-1 row-start-[15] "
+          className="col-span-2 col-start-5 row-span-1 lg:row-start-[15] "
           alt="test"
         />
       </section>

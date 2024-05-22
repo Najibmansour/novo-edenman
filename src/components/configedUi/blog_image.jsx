@@ -9,7 +9,7 @@ const BlogImage = ({ src, width, height, className }) => {
       src={src}
       width={width}
       height={height}
-      className={cn("rounded-[2.5rem]", className)}
+      className={cn("rounded-2xl lg:rounded-[2.5rem]", className)}
       alt="blog_image"
     />
   );
