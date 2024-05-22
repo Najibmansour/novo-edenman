@@ -21,10 +21,10 @@ const Connections = () => {
           />
         </div>
         <div className="col-span-full row-span-2 flex flex-col items-center justify-center   text-center tracking-wider text-primary">
-          <h1 className="text-sm font-bold lg:text-3xl">
+          <h1 className="text-lg font-bold lg:text-3xl">
             Explore more about our experiences!
           </h1>
-          <h2 className=" text-xs lg:text-2xl ">
+          <h2 className=" text-md lg:text-2xl ">
             To <b>“move in comfort”</b> in our success, we participate in events
             and exhibitions, because we believe that communication and sharing
             ideas is the key professional growth.
@@ -35,7 +35,7 @@ const Connections = () => {
           className="col-span-full row-span-2 lg:col-span-3"
           alt="test"
         />
-        <h2 className="col-span-full row-span-2 flex items-center justify-center p-5 text-xs tracking-wider text-primary lg:col-span-3 lg:p-10 lg:text-2xl">
+        <h2 className="text-md col-span-full row-span-2 flex items-center justify-center py-2 tracking-wider text-primary lg:col-span-3 lg:p-10 lg:text-2xl">
           Our participation in &apos;Lebanese Industry Exhibition&apos; at
           “Forum de Beirut” from 9 till 13 May 2024. The exhibition was
           organized by “MediTrade” and “Wedding Mall” in coordination with the
