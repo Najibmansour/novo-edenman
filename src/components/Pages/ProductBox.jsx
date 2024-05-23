@@ -2,32 +2,22 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 import ProductColorComponent from "../configedUi/colorComponent";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
-const ProductBox = ({
-  type,
-  title,
-  description,
-  fabric,
-  wash,
-  variants,
-  images,
-}) => {
+const ProductBox = ({ type, title, description, types, variants, images }) => {
   let titleColor = "";
   let buttonColor = "";
   let badgeColor = "";
 
-  if (type === "primary") {
-    titleColor = "text-4xl font-semibold text-primary lg:text-5xl";
-    buttonColor =
-      "mt-4 rounded-full bg-primary px-6 py-3 font-bold tracking-widest text-gray-100";
-    badgeColor = "bg-primary";
-  } else {
-    titleColor = "text-4xl font-semibold text-secondary lg:text-5xl";
-    buttonColor =
-      "mt-4 rounded-full bg-secondary px-6 py-3 font-bold tracking-widest text-gray-100";
-    badgeColor = "bg-secondary";
-  }
-
+  titleColor = "text-4xl font-semibold text-primary lg:text-5xl";
+  buttonColor =
+    "mt-4 rounded-full bg-primary px-6 py-3 font-bold tracking-widest text-gray-100";
+  badgeColor = "bg-primary";
   // console.log(images);
 
   return (
@@ -47,6 +37,48 @@ const ProductBox = ({
               />
             ))}
           </div> */}
+          <div>
+            {types && (
+              <div className="mt-2 flex flex-col gap-2">
+                <h4 className="font-semibold tracking-widest lg:text-2xl">
+                  Variants:
+                </h4>
+                {types.map(({ title, variants }) => (
+                  <div
+                    key={title}
+                    className="flex flex-row items-center rounded-full bg-gray-100 px-3 py-1 lg:px-5 lg:py-2"
+                  >
+                    <h5 className="tracking-wide lg:text-xl">{title}:</h5>
+                    <TooltipProvider delayDuration={0}>
+                      <div className=" flex flex-row space-x-1 ">
+                        {variants.map(({ color, title }, index) => (
+                          <Tooltip key={index}>
+                            <TooltipTrigger>
+                              {typeof color === "string" ? (
+                                <div
+                                  style={{ backgroundColor: `${color}` }}
+                                  className="h-[28px] w-[28px] rounded-full border-4 border-neutral-100 lg:h-[46px] lg:w-[46px]"
+                                  src={color}
+                                  alt={`color-${index}`}
+                                ></div>
+                              ) : (
+                                <Image
+                                  className="h-[28px] w-[28px] rounded-full border-4 border-neutral-100 lg:h-[46px] lg:w-[46px]"
+                                  src={color}
+                                  alt={`color-${index}`}
+                                ></Image>
+                              )}
+                            </TooltipTrigger>
+                            <TooltipContent>{title}</TooltipContent>
+                          </Tooltip>
+                        ))}
+                      </div>
+                    </TooltipProvider>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
           <button
             className={clsx(
               `hover hidden text-lg antialiased lg:block`,

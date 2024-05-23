@@ -12,7 +12,7 @@ import ProductBox from "../Pages/ProductBox";
 import { products } from "@/app/products";
 
 export default function ProductCarousel() {
-  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 200000, stopOnInteraction: true }));
 
   return (
     <Carousel
@@ -24,12 +24,12 @@ export default function ProductCarousel() {
       <CarouselContent>
         {products.map(
           (
-            { title, description, fabric, wash, variants, type, images },
+            { title, description, fabric, wash, variants, types, images },
             index,
           ) => (
             <CarouselItem key={index} className="flex h-min w-[100%]">
               <ProductBox
-                type={type}
+                types={types}
                 title={title}
                 description={description}
                 fabric={fabric}
