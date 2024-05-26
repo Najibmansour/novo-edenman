@@ -143,37 +143,29 @@ const products = [
     ],
     images: images["Boxers"],
   },
+
   {
-    title: "Classic Fresh Tank",
-    description:
-      "Your elegant high-end Tank is made with our breathable high-stretch cotton rib fabric and designed for any and everyday to provide utmost flexibilty and comfort.",
-    variants: [{ color: "#fcfcfc", title: "White" }],
-    images: images["Tank"],
-  },
-  {
-    title: "V Neck Sport Undershirt",
+    title: "V-Neck Sport Undershirt",
     description:
       "Your basic top quality half sleeve undershirt V neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     variants: [
       { color: COLOR_custom_black, title: "Black" },
-      { color: COLOR_custom_blue, title: "Blue" },
+      { color: COLOR_custom_blue, title: "Navy" },
       { color: COLOR_custom_gray, title: "Gray" },
-      { color: COLOR_custom_lightblue, title: "Light Blue" },
       { color: COLOR_custom_white, title: "White" },
     ],
     images: images["Vneck"],
   },
 
   {
-    title: "0 Neck Sport Undershirt",
+    title: "0-Neck Sport Undershirt",
     description:
       "Your basic top quality sleeveless undershirt O neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     variants: [
-      { color: "#000000", title: "Black" },
-      { color: "#666666", title: "Dark Gray" },
-      { color: "#a0a0a0", title: "Gray" },
-      { color: "#000080", title: "Navy Blue" },
-      { color: "#fcfcfc", title: "White" },
+      { color: COLOR_custom_black, title: "Black" },
+      { color: COLOR_custom_blue, title: "Navy" },
+      { color: COLOR_custom_gray, title: "Gray" },
+      { color: COLOR_custom_white, title: "White" },
     ],
     images: images["Oneck"],
   },
@@ -184,12 +176,28 @@ const products = [
       "Our Pique Undershirt, crafted from premium fabric, and it blends luxurious softness with timeless style, enjoy the comfort and experience the difference.",
     variants: [
       { color: "#000000", title: "Black" },
-      { color: "#666666", title: "Dark Gray" },
-      { color: "#a0a0a0", title: "Gray" },
       { color: "#000080", title: "Navy Blue" },
       { color: "#fcfcfc", title: "White" },
     ],
     images: images["Vneck"],
+  },
+  {
+    title: "O-neck Pique undershirt ",
+    description:
+      "Our Pique Undershirt, crafted from premium fabric, and it blends luxurious softness with timeless style, enjoy the comfort and experience the difference.",
+    variants: [
+      { color: "#000000", title: "Black" },
+      { color: "#000080", title: "Navy Blue" },
+      { color: "#fcfcfc", title: "White" },
+    ],
+    images: images["Vneck"],
+  },
+  {
+    title: "Classic Fresh Tank",
+    description:
+      "Your elegant high-end Tank is made with our breathable high-stretch cotton rib fabric and designed for any and everyday to provide utmost flexibilty and comfort.",
+    variants: [{ color: "#fcfcfc", title: "White" }],
+    images: images["Tank"],
   },
 ];
 
