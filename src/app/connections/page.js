@@ -21,10 +21,8 @@ const Connections = () => {
           />
         </div>
         <div className="col-span-full row-span-2 flex flex-col items-center justify-center   text-center tracking-wider text-primary">
-          <h1 className="text-lg font-bold lg:text-3xl">
-            Explore more about our experiences!
-          </h1>
-          <h2 className=" text-md lg:text-2xl ">
+          <h1 className="font-bold">Explore more about our experiences!</h1>
+          <h2 className="text-md lg:text-2xl ">
             To <b>“move in comfort”</b> in our success, we participate in events
             and exhibitions, because we believe that communication and sharing
             ideas is the key professional growth.

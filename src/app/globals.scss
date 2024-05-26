@@ -201,3 +201,11 @@ body {
   // separate these with commas.
   src: url("../../public/BebasNeue-Regular.ttf") format("ttf");
 }
+
+h1 {
+  @apply text-xl lg:text-3xl;
+}
+
+* {
+  @apply text-primary;
+}

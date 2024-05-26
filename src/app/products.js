@@ -79,27 +79,13 @@ const products = [
       { name: "Cotton", percent: "95" },
       { name: "Elastane", percent: "5" },
     ],
-    types: [
-      {
-        title: "Cottony",
-        variants: [
-          { color: "#000000", title: "Black" },
-          { color: "#a0a0a0", title: "Gray" },
-          { color: "#7777EA", title: "Blue" },
-          { color: "#000080", title: "Navy Blue" },
-        ],
-      },
-      {
-        title: "Sport",
-        variants: [
-          { color: "#000000", title: "Black" },
-          { color: "#a0a0a0", title: "Gray" },
-          { color: "#7777EA", title: "Blue" },
-          { color: "#000080", title: "Navy Blue" },
-        ],
-      },
+
+    variants: [
+      { color: "#000000", title: "Black" },
+      { color: "#a0a0a0", title: "Gray" },
+      { color: "#7777EA", title: "Blue" },
+      { color: "#000080", title: "Navy Blue" },
     ],
-    variants: [],
     images: images["Briefs"],
   },
 
@@ -123,7 +109,7 @@ const products = [
   {
     title: "Sport Brief",
     description:
-      "high-quality boxer made from micro modal fabric, guaranteeing unparalleled comfort.",
+      "High-quality boxer made from micro modal fabric, guaranteeing unparalleled comfort.",
     fabric: [
       { name: "Cotton", percent: "95" },
       { name: "Elastane", percent: "5" },
@@ -165,7 +151,7 @@ const products = [
     images: images["Tank"],
   },
   {
-    title: "Cottony undershirt V-neck",
+    title: "V Neck Sport Undershirt",
     description:
       "Your basic top quality half sleeve undershirt V neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     variants: [
@@ -179,7 +165,7 @@ const products = [
   },
 
   {
-    title: "Cottony undershirt O neck",
+    title: "0 Neck Sport Undershirt",
     description:
       "Your basic top quality sleeveless undershirt O neck, this breathable, is made of 4-way ultra-stretch natural cotton to provide utmost flexibilty and comfort, with moisture-wicking properties, perfect for all day and every day wear.",
     variants: [
