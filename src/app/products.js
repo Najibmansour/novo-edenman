@@ -51,7 +51,7 @@ const products = [
       { color: "#7777EA", title: "Blue" },
       { color: "#65880f", title: "Olive Green" },
     ],
-    images: images["Sports boxers"],
+    images: images["Sport Brief Boxer"],
   },
   {
     title: "Sport Pique Boxer",
@@ -69,7 +69,7 @@ const products = [
       { color: "#7777EA", title: "Blue" },
       { color: "#65880f", title: "Olive Green" },
     ],
-    images: images["Sport Pique Boxer"],
+    images: images["Sport Pique Brief Boxer"],
   },
   {
     title: "Soft Brief",
@@ -86,11 +86,11 @@ const products = [
       { color: "#7777EA", title: "Blue" },
       { color: "#000080", title: "Navy Blue" },
     ],
-    images: images["Briefs"],
+    images: images["Soft Brief"],
   },
 
   {
-    title: "Smooth Cotton Trunk",
+    title: "Smooth Cotton Trunk", /////////////////////////////////////////////
     description:
       "Your everyday day favorite Trunk, made from super soft natural cotton fabric, with clean seam lines, that provide you with much elasticity, natural feelings and kind to your skin with the smooth elastic waistband.",
     fabric: [
@@ -104,7 +104,7 @@ const products = [
       { color: "#7777EA", title: "Blue" },
     ],
 
-    images: images["Trunk"],
+    images: images["Super Soft Boxer"],
   },
   {
     title: "Sport Brief",
@@ -120,7 +120,7 @@ const products = [
       { color: "#000080", title: "Navy Blue" },
     ],
 
-    images: images["Trunk"],
+    images: images["Sport Brief"],
   },
   {
     title: "Super Soft Boxers",
@@ -141,7 +141,7 @@ const products = [
       { color: CUSTOM_pattern09, title: "Pattern 8" },
       { color: "#7777EA", title: "Blue" },
     ],
-    images: images["Boxers"],
+    images: images["Super Soft Boxer"],
   },
 
   {
