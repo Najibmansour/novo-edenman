@@ -8,14 +8,14 @@ import React from "react";
 const images = importAll(require.context("../../images/exhibition", true));
 
 const Connections = () => {
-  console.log(typeof images["exhibition05.jpeg"][0]);
+  console.log(typeof images["certificate03.jpeg"][0]);
 
   return (
     <main className="flex w-full flex-col items-center pb-10 pt-20">
       <section className="grid w-[90vw] grid-cols-6 grid-rows-[16] gap-3 lg:w-[80vw] lg:gap-10">
         <div className="col-span-full row-span-4">
           <BlogImage
-            src={images["exhibition07.jpeg"][0]}
+            src={images["certificate03.jpeg"][0]}
             className=""
             alt="test"
           />
@@ -64,6 +64,29 @@ const Connections = () => {
           src={images["exhibition06.jpeg"][0]}
           className="col-span-2 col-start-5 row-span-1 lg:row-start-[15] "
           alt="test"
+        />
+      </section>
+
+      <section className="grid w-[90vw] gap-3 lg:w-[80vw] lg:grid-cols-6 lg:grid-rows-[10] lg:gap-10">
+        <BlogImage
+          src={images["certificate00.jpeg"][0]}
+          alt="test"
+          className="col-span-3 row-span-4 "
+        />
+        <BlogImage
+          src={images["certificate01.jpeg"][0]}
+          alt="test"
+          className="col-span-3 row-span-4 "
+        />
+        <BlogImage
+          src={images["certificate02.jpeg"][0]}
+          alt="test"
+          className="col-span-3 row-span-4 "
+        />
+        <BlogImage
+          src={images["exhibition07.jpeg"][0]}
+          alt="test"
+          className="col-span-3 row-span-4 "
         />
       </section>
       <section className="my-3 flex w-full flex-row justify-center gap-2 text-[#17395C]">

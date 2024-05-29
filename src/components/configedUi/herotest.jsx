@@ -19,7 +19,7 @@ const HeroTest = (props) => {
                   <h2 className=" text-center text-3xl lg:text-left lg:text-7xl">
                     <TextLogo className="lg:w-[100%] " />
                   </h2>
-                  <h4 className="text-sm font-bold  tracking-wide lg:text-xl">
+                  <h4 className="text-sm font-bold  tracking-wide text-white lg:text-xl">
                     Move in Comfort
                   </h4>
                 </div>
