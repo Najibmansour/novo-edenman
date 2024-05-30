@@ -44,7 +44,7 @@ const Connections = () => {
           src={images["exhibition01.jpeg"][0]}
           className="col-span-full row-span-3"
           alt="test"
-        />{" "}
+        />
         <BlogImage
           src={images["exhibition04.jpeg"][0]}
           className="col-span-2 row-span-8 " // TODO: fix row span on this pic to match other images around it

@@ -104,7 +104,7 @@ const products = [
       { color: "#7777EA", title: "Blue" },
     ],
 
-    images: images["Super Soft Boxer"],
+    images: images["Trunk"],
   },
   {
     title: "Sport Brief",
