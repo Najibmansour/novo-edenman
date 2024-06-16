@@ -3,6 +3,7 @@ import {
   mailOptions,
   compileFeedbackTemplate,
 } from "@/lib/nodemailerClient";
+import { log } from "console";
 import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
@@ -17,11 +18,15 @@ export async function POST(req, res) {
       subject: `Edenmen FeedBack from Website ${from_phone}`,
       html: compileFeedbackTemplate(from_name, from_phone, message),
     });
+    log(mail);
 
-    return NextResponse.json({ message: "Success: email was sent" });
+    return NextResponse.json(
+      { message: "Success: email was sent" },
+      { status: 200 },
+    );
   } catch (error) {
     console.log(error);
-    NextResponse.status(500).json({ message: "COULD NOT SEND MESSAGE" });
+    NextResponse.json({ message: "COULD NOT SEND MESSAGE" }, { status: 500 });
   }
 }
 

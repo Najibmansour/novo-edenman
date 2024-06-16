@@ -26,10 +26,10 @@ const FormMail = () => {
           console.log(res);
         })
         .then(() => {
-          toast.error("Message was not sent");
+          toast.success("Message sent successfully");
         })
         .catch(() => {
-          toast.success("Message sent successfully");
+          toast.error("Message was not sent");
         });
     }
     //resets the form
