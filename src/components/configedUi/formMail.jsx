@@ -33,7 +33,7 @@ const FormMail = () => {
         });
     }
     //resets the form
-    // reset();
+    reset();
     //
   };
 
